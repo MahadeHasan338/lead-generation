@@ -18,7 +18,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${barlow.className} bg-gray-100/50 text-black overflow-x-hidden`}
+        className={`${barlow.className}bg-white text-black`}
         suppressHydrationWarning={true}
       >
         <Header />

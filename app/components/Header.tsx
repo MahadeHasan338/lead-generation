@@ -11,34 +11,6 @@ export default function Header() {
   const [scroll, setScroll] = useState(false);
   const [activeMenu, setActiveMenu] = useState<any>({});
 
-  useEffect(() => {
-    const updateScroll = () => {
-      window.scrollY >= 90 ? setScroll(true) : setScroll(false);
-    };
-    window.addEventListener("scroll", updateScroll);
-    return () => window.removeEventListener("scroll", updateScroll);
-  }, []);
-
-  // Initialize activeMenu state with all submenus collapsed
-  useEffect(() => {
-    const initialActiveMenuState: any = {};
-    menus.forEach((menu) => {
-      initialActiveMenuState[menu.title] = false;
-    });
-    setActiveMenu(initialActiveMenuState);
-  }, []);
-
-  const toggleDropdown = (item: string) => {
-    setActiveMenu((prevActiveMenu: any) => ({
-      ...prevActiveMenu,
-      [item]: !prevActiveMenu[item],
-    }));
-  };
-
-  const transitionStyle = {
-    transition: "max-height 0.5s ease-in-out",
-  };
-
   // Define menus and submenus
   const menus = [
     {
@@ -71,6 +43,34 @@ export default function Header() {
     },
   ];
 
+  useEffect(() => {
+    const updateScroll = () => {
+      window.scrollY >= 90 ? setScroll(true) : setScroll(false);
+    };
+    window.addEventListener("scroll", updateScroll);
+    return () => window.removeEventListener("scroll", updateScroll);
+  }, []);
+
+  // Initialize activeMenu state with all submenus collapsed
+  useEffect(() => {
+    const initialActiveMenuState: any = {};
+    menus.forEach((menu) => {
+      initialActiveMenuState[menu.title] = false;
+    });
+    setActiveMenu(initialActiveMenuState);
+  }, []);
+
+  const toggleDropdown = (item: string) => {
+    setActiveMenu((prevActiveMenu: any) => ({
+      ...prevActiveMenu,
+      [item]: !prevActiveMenu[item],
+    }));
+  };
+
+  const transitionStyle = {
+    transition: "max-height 0.5s ease-in-out",
+  };
+
   return (
     <header
       className={`backdrop-filter backdrop-blur-lg ${
@@ -78,11 +78,11 @@ export default function Header() {
       } border-gray-200 z-30 min-w-full flex flex-col fixed`}
     >
       {/* Desktop Navbar */}
-      <nav className="default-container hidden lg:flex items-center justify-between">
+      <nav className="nav-container hidden lg:flex items-center justify-between">
         <Link href="/">
           <Image src={logo} alt="logo" width={300} height={95} priority />
         </Link>
-        <ul className="flex items-center gap-8 xl:gap-12">
+        <ul className="flex items-center gap-8 xl:gap-12 mr-3">
           {menus.map((menu, index) => (
             <li key={index} className="group relative">
               <Link
@@ -114,7 +114,7 @@ export default function Header() {
       </nav>
 
       {/* Mobile navbar */}
-      <nav className="font-bold p-4 flex lg:hidden items-center justify-between">
+      <nav className="font-bold pl-2 pr-3 py-4 flex lg:hidden items-center justify-between">
         <Link href="/" className="h-[70px] w-[225px] relative">
           <Image
             src={logo}
