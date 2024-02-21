@@ -3,7 +3,7 @@ import { IoIosArrowForward } from "react-icons/io";
 
 const Hero = () => {
   return (
-    <section id="home" className={` relative w-full mx-auto overflow-hidden`}>
+    <section id="home" className={`relative w-full mx-auto overflow-hidden`}>
       <div className="absolute -z-10 h-full w-full">
         {/* <Image src={hero} alt="hero image" style={{ objectFit: "cover" }} /> */}
       </div>

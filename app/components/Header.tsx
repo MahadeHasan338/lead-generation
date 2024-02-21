@@ -9,6 +9,8 @@ import logo from "@/public/logo.png";
 export default function Header() {
   const [navCollapse, setNavCollapse] = useState(true);
   const [scroll, setScroll] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const [activeItem, setActiveItem] = useState<null | string>(null);
 
   useEffect(() => {
     const updateScroll = () => {
@@ -17,15 +19,20 @@ export default function Header() {
     window.addEventListener("scroll", updateScroll);
   }, []);
 
-  const navs = [
-    "home",
-    "about",
-    "skills",
-    "projects",
-    "experience",
-    "testimonials",
-    "contact",
-  ];
+  // Toggle the visibility of the dropdown menu
+  const toggleDropdown = (item: string) => {
+    setIsOpen(!isOpen);
+    setActiveItem(item);
+  };
+
+  // Inline styles for the dropdown menu
+  const dropdownStyle: any = {
+    maxHeight: isOpen ? "300px" : "0",
+    overflow: "hidden",
+    transition: "max-height 0.5s ease-in-out",
+    visibility: isOpen ? "visible" : "hidden",
+    opacity: isOpen ? 1 : 0,
+  };
 
   return (
     <header
@@ -33,105 +40,6 @@ export default function Header() {
         scroll ? "border-b bg-white bg-opacity-40" : "border-b-0"
       }border-gray-200 z-30 min-w-full flex flex-col fixed`}
     >
-      <nav className="lg:w-11/12 2xl:w-4/5 w-full md:px-6 2xl:px-0 mx-auto hidden lg:flex items-center justify-between">
-        <Link href={"/"}>
-          <div className="h-[95px] w-[300px]">
-            <Image src={logo} alt="logo" priority></Image>
-          </div>
-        </Link>
-
-        <ul className="flex items-center gap-12">
-          <li className="group relative">
-            <Link
-              href="#"
-              className="hover:text-[#E0BC74] transition-all duration-500 text-lg font-medium capitalize cursor-pointer flex items-center space-x-2"
-            >
-              <span>Who We Serve</span>
-              <FaAngleDown className="mt-[5px] text-md" />
-            </Link>
-
-            <ul className="py-2 px-4 shadow-sm invisible opacity-0 group-hover:visible group-hover:opacity-100 absolute top-8 left-0 transition-all duration-500 flex flex-col space-y-1">
-              <li>
-                <Link
-                  href="#"
-                  className="hover:text-[#E0BC74] transition-colors duration-500 text-lg font-medium capitalize cursor-pointer text-nowrap"
-                >
-                  Who We Serve
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
-                  className="hover:text-[#E0BC74] transition-colors duration-500 text-lg font-medium capitalize cursor-pointer text-nowrap"
-                >
-                  Linkedin Lead Generation
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
-                  className="hover:text-[#E0BC74] transition-colors duration-500 text-lg font-medium capitalize cursor-pointer text-nowrap"
-                >
-                  Email Marketing
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
-                  className="hover:text-[#E0BC74] transition-colors duration-500 text-lg font-medium capitalize cursor-pointer text-nowrap"
-                >
-                  Facebook Page Product Review
-                </Link>
-              </li>
-            </ul>
-          </li>
-          <li className="group relative">
-            <Link
-              href="#"
-              className="hover:text-[#E0BC74] transition-all duration-500 text-lg font-medium capitalize cursor-pointer flex items-center space-x-2"
-            >
-              <span>Tools Services</span>
-              <FaAngleDown className="mt-[5px] text-md" />
-            </Link>
-
-            <ul className="py-2 px-4 shadow-sm invisible opacity-0 group-hover:visible group-hover:opacity-100 absolute top-8 left-0 transition-all duration-500 flex flex-col space-y-1">
-              <li>
-                <Link
-                  href="#"
-                  className="hover:text-[#E0BC74] transition-colors duration-500 text-lg font-medium capitalize cursor-pointer text-nowrap"
-                >
-                  Sales Navigator Premium Subscriptions
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
-                  className="hover:text-[#E0BC74] transition-colors duration-500 text-lg font-medium capitalize cursor-pointer text-nowrap"
-                >
-                  Apollo Bulk Exports
-                </Link>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <Link
-              href="#who-we-serve"
-              className="hover:text-[#E0BC74] transition-colors duration-500 text-lg font-medium capitalize cursor-pointer text-nowrap"
-            >
-              About
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="#who-we-serve"
-              className="hover:text-[#E0BC74] transition-colors duration-500 text-lg font-medium capitalize cursor-pointer text-nowrap"
-            >
-              Why Us
-            </Link>
-          </li>
-        </ul>
-      </nav>
-
       {/* mobile navbar */}
       <nav className="font-bold p-4 flex lg:hidden items-center justify-between">
         <Link href={"/"}>
@@ -140,104 +48,184 @@ export default function Header() {
           </div>
         </Link>
         <CgMenuRight size={20} onClick={() => setNavCollapse(false)} />
-      </nav>
 
-      <div
-        className={`flex min-h-screen w-screen absolute lg:hidden top-0 ${
-          !navCollapse ? "right-0" : "right-[-100%]"
-        } bottom-0 z-50 ease-in duration-300`}
-      >
         <div
-          className="w-1/4 md:w-2/4"
-          onClick={() => setNavCollapse(true)}
-        ></div>
-
-        <div className="flex flex-col p-4 bg-gray-100/95 backdrop-filter backdrop-blur-sm w-3/4 md:w-2/4">
-          <CgClose
-            className="self-end my-2"
-            size={20}
+          className={`flex min-h-screen w-screen absolute lg:hidden top-0 ${
+            !navCollapse ? "right-0" : "right-[-100%]"
+          } bottom-0 z-50 ease-in duration-300`}
+        >
+          <div
+            className="w-1/4 md:w-2/4"
             onClick={() => setNavCollapse(true)}
-          />
+          ></div>
 
-          <ul className="flex flex-col items-start mt-5 gap-y-8">
-            <li className="group relative">
-              <Link
-                href="#who-we-serve"
-                className="hover:text-[#E0BC74] transition-all duration-500 text-lg font-medium capitalize cursor-pointer flex items-center space-x-2"
-              >
-                <span>Who We Serve</span>
-                <FaAngleDown className="mt-[5px] text-md" />
-              </Link>
+          <div className="flex flex-col p-4 bg-gray-100/95 backdrop-filter backdrop-blur-sm w-3/4 md:w-2/4 overflow-y-auto">
+            <CgClose
+              className="self-end my-2"
+              size={20}
+              onClick={() => setNavCollapse(true)}
+            />
 
-              <ul className="py-2 px-4 shadow-sm invisible opacity-0 group-hover:visible group-hover:opacity-100 absolute top-10 left-0 transition-all duration-500 flex flex-col space-y-1">
-                <li>
-                  <Link
-                    href="#"
-                    onClick={() => setNavCollapse(true)}
-                    className="hover:text-[#E0BC74] transition-colors duration-500 text-lg font-medium capitalize cursor-pointer text-nowrap"
-                  >
-                    Who We Serve
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    onClick={() => setNavCollapse(true)}
-                    className="hover:text-[#E0BC74] transition-colors duration-500 text-lg font-medium capitalize cursor-pointer text-nowrap"
-                  >
-                    Linkedin Lead Generation
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    onClick={() => setNavCollapse(true)}
-                    className="hover:text-[#E0BC74] transition-colors duration-500 text-lg font-medium capitalize cursor-pointer text-nowrap"
-                  >
-                    Email Marketing
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    onClick={() => setNavCollapse(true)}
-                    className="hover:text-[#E0BC74] transition-colors duration-500 text-lg font-medium capitalize cursor-pointer text-nowrap"
-                  >
-                    Facebook Page Product Review
-                  </Link>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <Link
-                href="#who-we-serve"
-                onClick={() => setNavCollapse(true)}
-                className="hover:text-[#E0BC74] transition-colors duration-500 text-lg font-medium capitalize cursor-pointer text-nowrap"
+            <ul className="flex flex-col items-start mt-5 gap-y-8">
+              <li
+                className={`${
+                  activeItem === "who" ? "text-light-yellow" : ""
+                } select-none text-lg font-medium capitalize cursor-pointer`}
+                onClick={() => toggleDropdown("who")}
               >
-                Tools Services
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="#who-we-serve"
-                onClick={() => setNavCollapse(true)}
-                className="hover:text-[#E0BC74] transition-colors duration-500 text-lg font-medium capitalize cursor-pointer text-nowrap"
+                <div className="flex items-center space-x-2 justify-between ">
+                  <span>Who We Serve</span>
+                  <FaAngleDown
+                    className={`transition-transform duration-500 mt-[5px] text-md ${
+                      isOpen ? "rotate-180" : ""
+                    }`}
+                  />
+                </div>
+
+                <ul
+                  style={dropdownStyle}
+                  className="list-none text-black flex flex-col gap-y-5"
+                >
+                  <li className="mt-5">
+                    <Link
+                      href="#"
+                      className="text-lg font-medium capitalize cursor-pointer "
+                      onClick={() => setNavCollapse(true)}
+                    >
+                      B2B Lead Generation
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="#"
+                      className="text-lg font-medium capitalize cursor-pointer"
+                      onClick={() => setNavCollapse(true)}
+                    >
+                      Linkedin Lead Generation
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="#"
+                      className="text-lg font-medium capitalize cursor-pointer"
+                      onClick={() => setNavCollapse(true)}
+                    >
+                      Email Marketing
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="#"
+                      className="text-lg font-medium capitalize cursor-pointer"
+                      onClick={() => setNavCollapse(true)}
+                    >
+                      Facebook Page Product Review
+                    </Link>
+                  </li>
+                </ul>
+              </li>
+
+              <li
+                className={`${
+                  activeItem === "tools" ? "text-light-yellow" : ""
+                } select-none text-lg font-medium capitalize cursor-pointer`}
+                onClick={() => toggleDropdown("tools")}
+              >
+                <div className="flex items-center space-x-2 justify-between ">
+                  <span>Tools Services</span>
+                  <FaAngleDown
+                    className={`transition-transform duration-500 mt-[5px] text-md ${
+                      isOpen ? "rotate-180" : ""
+                    }`}
+                  />
+                </div>
+
+                <ul
+                  style={dropdownStyle}
+                  className="list-none text-black flex flex-col gap-y-5"
+                >
+                  <li className="mt-5">
+                    <Link
+                      href="#"
+                      className="text-lg font-medium capitalize cursor-pointer"
+                      onClick={() => setNavCollapse(true)}
+                    >
+                      Sales Navigator Premium Subscriptions
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="#"
+                      className="text-lg font-medium capitalize cursor-pointer"
+                      onClick={() => setNavCollapse(true)}
+                    >
+                      Apollo Bulk Exports
+                    </Link>
+                  </li>
+                </ul>
+              </li>
+
+              <li
+                className={`${
+                  activeItem === "tools" ? "text-light-yellow" : ""
+                } select-none text-lg font-medium capitalize cursor-pointer`}
+                onClick={() => toggleDropdown("tools")}
+              >
+                <div className="flex items-center space-x-2 justify-between ">
+                  <span>About</span>
+                  <FaAngleDown
+                    className={`transition-transform duration-500 mt-[5px] text-md ${
+                      isOpen ? "rotate-180" : ""
+                    }`}
+                  />
+                </div>
+
+                <ul
+                  style={dropdownStyle}
+                  className="list-none text-black flex flex-col gap-y-5"
+                >
+                  <li className="mt-5">
+                    <Link
+                      href="#"
+                      className="text-lg font-medium capitalize cursor-pointer"
+                      onClick={() => setNavCollapse(true)}
+                    >
+                      About Us
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="#"
+                      className="text-lg font-medium capitalize cursor-pointer"
+                      onClick={() => setNavCollapse(true)}
+                    >
+                      Contact
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="#"
+                      className="text-lg font-medium capitalize cursor-pointer"
+                      onClick={() => setNavCollapse(true)}
+                    >
+                      Testimonial
+                    </Link>
+                  </li>
+                </ul>
+              </li>
+
+              <li
+                className={`${
+                  activeItem === "tools" ? "text-light-yellow" : ""
+                } select-none text-lg font-medium capitalize cursor-pointer`}
+                onClick={() => toggleDropdown("tools")}
               >
                 Why Us
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="#who-we-serve"
-                onClick={() => setNavCollapse(true)}
-                className="hover:text-[#E0BC74] transition-colors duration-500 text-lg font-medium capitalize cursor-pointer text-nowrap"
-              >
-                About
-              </Link>
-            </li>
-          </ul>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
+      </nav>
     </header>
   );
 }

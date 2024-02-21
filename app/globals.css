@@ -6,6 +6,10 @@ html {
   scroll-behavior: smooth !important;
 }
 
+.default-container {
+  @apply max-w-[1140px] lg:px-10 xl:px-0 w-full mx-auto;
+}
+
 ::-webkit-scrollbar {
   width: 0.5rem;
 }
