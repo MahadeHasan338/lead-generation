@@ -19,12 +19,24 @@ export default function Header() {
     return () => window.removeEventListener("scroll", updateScroll);
   }, []);
 
-  // Toggle the visibility of the dropdown menu for a specific item
+  // Initialize activeMenu state with all submenus collapsed
+  useEffect(() => {
+    const initialActiveMenuState: any = {};
+    menus.forEach((menu) => {
+      initialActiveMenuState[menu.title] = false;
+    });
+    setActiveMenu(initialActiveMenuState);
+  }, []);
+
   const toggleDropdown = (item: string) => {
     setActiveMenu((prevActiveMenu: any) => ({
       ...prevActiveMenu,
       [item]: !prevActiveMenu[item],
     }));
+  };
+
+  const transitionStyle = {
+    transition: "max-height 0.5s ease-in-out",
   };
 
   // Define menus and submenus
@@ -131,12 +143,13 @@ export default function Header() {
               onClick={() => setNavCollapse(true)}
             />
 
-            <ul className="flex flex-col items-start mt-5 gap-y-8">
+            <ul className="flex flex-col items-start mt-5 gap-y-5">
               {menus.map((menu) => (
                 <li key={menu.title} className="text-lg font-medium capitalize">
                   <div
-                    className="flex items-center space-x-2 cursor-pointer"
+                    className="flex items-center space-x-2 cursor-pointer transition-colors duration-500"
                     onClick={() => toggleDropdown(menu.title)}
+                    style={{ color: activeMenu[menu.title] ? "#E0BC74" : "" }}
                   >
                     <span>{menu.title}</span>
                     {menu.submenu.length > 0 && (
@@ -148,8 +161,15 @@ export default function Header() {
                     )}
                   </div>
 
-                  {menu.submenu.length > 0 && activeMenu[menu.title] && (
-                    <ul className="mt-5 list-none text-black flex flex-col gap-y-5">
+                  {menu.submenu.length > 0 && (
+                    <ul
+                      className="mt-5 list-none text-black flex flex-col gap-y-5"
+                      style={{
+                        maxHeight: activeMenu[menu.title] ? "300px" : "0",
+                        overflow: "hidden",
+                        transition: "max-height 0.5s ease-in-out",
+                      }}
+                    >
                       {menu.submenu.map((item, index) => (
                         <li key={index}>
                           <Link
