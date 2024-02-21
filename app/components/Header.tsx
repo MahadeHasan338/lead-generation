@@ -9,43 +9,108 @@ import logo from "@/public/logo.png";
 export default function Header() {
   const [navCollapse, setNavCollapse] = useState(true);
   const [scroll, setScroll] = useState(false);
-  const [isOpen, setIsOpen] = useState(false);
-  const [activeItem, setActiveItem] = useState<null | string>(null);
+  const [activeMenu, setActiveMenu] = useState<any>({});
 
   useEffect(() => {
     const updateScroll = () => {
       window.scrollY >= 90 ? setScroll(true) : setScroll(false);
     };
     window.addEventListener("scroll", updateScroll);
+    return () => window.removeEventListener("scroll", updateScroll);
   }, []);
 
-  // Toggle the visibility of the dropdown menu
+  // Toggle the visibility of the dropdown menu for a specific item
   const toggleDropdown = (item: string) => {
-    setIsOpen(!isOpen);
-    setActiveItem(item);
+    setActiveMenu((prevActiveMenu: any) => ({
+      ...prevActiveMenu,
+      [item]: !prevActiveMenu[item],
+    }));
   };
 
-  // Inline styles for the dropdown menu
-  const dropdownStyle: any = {
-    maxHeight: isOpen ? "300px" : "0",
-    overflow: "hidden",
-    transition: "max-height 0.5s ease-in-out",
-    visibility: isOpen ? "visible" : "hidden",
-    opacity: isOpen ? 1 : 0,
-  };
+  // Define menus and submenus
+  const menus = [
+    {
+      title: "Who We Serve",
+      submenu: [
+        { title: "B2B Lead Generation" },
+        { title: "Linkedin Lead Generation" },
+        { title: "Email Marketing" },
+        { title: "Facebook Page Product Review" },
+      ],
+    },
+    {
+      title: "Tools Services",
+      submenu: [
+        { title: "Sales Navigator Premium Subscriptions" },
+        { title: "Apollo Bulk Exports" },
+      ],
+    },
+    {
+      title: "About",
+      submenu: [
+        { title: "About Us" },
+        { title: "Contact" },
+        { title: "Testimonial" },
+      ],
+    },
+    {
+      title: "Why Us",
+      submenu: [],
+    },
+  ];
 
   return (
     <header
       className={`backdrop-filter backdrop-blur-lg ${
         scroll ? "border-b bg-white bg-opacity-40" : "border-b-0"
-      }border-gray-200 z-30 min-w-full flex flex-col fixed`}
+      } border-gray-200 z-30 min-w-full flex flex-col fixed`}
     >
-      {/* mobile navbar */}
+      {/* Desktop Navbar */}
+      <nav className="default-container hidden lg:flex items-center justify-between">
+        <Link href="/">
+          <Image src={logo} alt="logo" width={300} height={95} priority />
+        </Link>
+        <ul className="flex items-center gap-8 xl:gap-12">
+          {menus.map((menu, index) => (
+            <li key={index} className="group relative">
+              <Link
+                href="#"
+                className="hover:text-light-yellow transition-all duration-500 text-lg font-medium capitalize flex items-center space-x-2"
+              >
+                <span>{menu.title}</span>
+                {menu.submenu.length > 0 && (
+                  <FaAngleDown className="mt-[5px] text-md" />
+                )}
+              </Link>
+              {menu.submenu.length > 0 && (
+                <ul className="py-2 px-4 shadow-sm invisible opacity-0 group-hover:visible group-hover:opacity-100 absolute top-9 left-0 transition-all duration-500 flex flex-col space-y-1 bg-white">
+                  {menu.submenu.map((subItem, subIndex) => (
+                    <li key={subIndex}>
+                      <Link
+                        href="#"
+                        className="block hover:text-light-yellow transition-colors duration-500 text-lg font-medium capitalize text-nowrap"
+                      >
+                        {subItem.title}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </li>
+          ))}
+        </ul>
+      </nav>
+
+      {/* Mobile navbar */}
       <nav className="font-bold p-4 flex lg:hidden items-center justify-between">
-        <Link href={"/"}>
-          <div className="h-[70px] w-[225px]">
-            <Image src={logo} alt="logo" priority></Image>
-          </div>
+        <Link href="/" className="h-[70px] w-[225px] relative">
+          <Image
+            src={logo}
+            alt="logo"
+            layout="fill"
+            objectFit="contain"
+            priority
+          />
         </Link>
         <CgMenuRight size={20} onClick={() => setNavCollapse(false)} />
 
@@ -67,161 +132,39 @@ export default function Header() {
             />
 
             <ul className="flex flex-col items-start mt-5 gap-y-8">
-              <li
-                className={`${
-                  activeItem === "who" ? "text-light-yellow" : ""
-                } select-none text-lg font-medium capitalize cursor-pointer`}
-                onClick={() => toggleDropdown("who")}
-              >
-                <div className="flex items-center space-x-2 justify-between ">
-                  <span>Who We Serve</span>
-                  <FaAngleDown
-                    className={`transition-transform duration-500 mt-[5px] text-md ${
-                      isOpen ? "rotate-180" : ""
-                    }`}
-                  />
-                </div>
+              {menus.map((menu) => (
+                <li key={menu.title} className="text-lg font-medium capitalize">
+                  <div
+                    className="flex items-center space-x-2 cursor-pointer"
+                    onClick={() => toggleDropdown(menu.title)}
+                  >
+                    <span>{menu.title}</span>
+                    {menu.submenu.length > 0 && (
+                      <FaAngleDown
+                        className={`transition-transform duration-500 mt-[5px] text-sm ${
+                          activeMenu[menu.title] ? "rotate-180" : ""
+                        }`}
+                      />
+                    )}
+                  </div>
 
-                <ul
-                  style={dropdownStyle}
-                  className="list-none text-black flex flex-col gap-y-5"
-                >
-                  <li className="mt-5">
-                    <Link
-                      href="#"
-                      className="text-lg font-medium capitalize cursor-pointer "
-                      onClick={() => setNavCollapse(true)}
-                    >
-                      B2B Lead Generation
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="#"
-                      className="text-lg font-medium capitalize cursor-pointer"
-                      onClick={() => setNavCollapse(true)}
-                    >
-                      Linkedin Lead Generation
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="#"
-                      className="text-lg font-medium capitalize cursor-pointer"
-                      onClick={() => setNavCollapse(true)}
-                    >
-                      Email Marketing
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="#"
-                      className="text-lg font-medium capitalize cursor-pointer"
-                      onClick={() => setNavCollapse(true)}
-                    >
-                      Facebook Page Product Review
-                    </Link>
-                  </li>
-                </ul>
-              </li>
-
-              <li
-                className={`${
-                  activeItem === "tools" ? "text-light-yellow" : ""
-                } select-none text-lg font-medium capitalize cursor-pointer`}
-                onClick={() => toggleDropdown("tools")}
-              >
-                <div className="flex items-center space-x-2 justify-between ">
-                  <span>Tools Services</span>
-                  <FaAngleDown
-                    className={`transition-transform duration-500 mt-[5px] text-md ${
-                      isOpen ? "rotate-180" : ""
-                    }`}
-                  />
-                </div>
-
-                <ul
-                  style={dropdownStyle}
-                  className="list-none text-black flex flex-col gap-y-5"
-                >
-                  <li className="mt-5">
-                    <Link
-                      href="#"
-                      className="text-lg font-medium capitalize cursor-pointer"
-                      onClick={() => setNavCollapse(true)}
-                    >
-                      Sales Navigator Premium Subscriptions
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="#"
-                      className="text-lg font-medium capitalize cursor-pointer"
-                      onClick={() => setNavCollapse(true)}
-                    >
-                      Apollo Bulk Exports
-                    </Link>
-                  </li>
-                </ul>
-              </li>
-
-              <li
-                className={`${
-                  activeItem === "tools" ? "text-light-yellow" : ""
-                } select-none text-lg font-medium capitalize cursor-pointer`}
-                onClick={() => toggleDropdown("tools")}
-              >
-                <div className="flex items-center space-x-2 justify-between ">
-                  <span>About</span>
-                  <FaAngleDown
-                    className={`transition-transform duration-500 mt-[5px] text-md ${
-                      isOpen ? "rotate-180" : ""
-                    }`}
-                  />
-                </div>
-
-                <ul
-                  style={dropdownStyle}
-                  className="list-none text-black flex flex-col gap-y-5"
-                >
-                  <li className="mt-5">
-                    <Link
-                      href="#"
-                      className="text-lg font-medium capitalize cursor-pointer"
-                      onClick={() => setNavCollapse(true)}
-                    >
-                      About Us
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="#"
-                      className="text-lg font-medium capitalize cursor-pointer"
-                      onClick={() => setNavCollapse(true)}
-                    >
-                      Contact
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="#"
-                      className="text-lg font-medium capitalize cursor-pointer"
-                      onClick={() => setNavCollapse(true)}
-                    >
-                      Testimonial
-                    </Link>
-                  </li>
-                </ul>
-              </li>
-
-              <li
-                className={`${
-                  activeItem === "tools" ? "text-light-yellow" : ""
-                } select-none text-lg font-medium capitalize cursor-pointer`}
-                onClick={() => toggleDropdown("tools")}
-              >
-                Why Us
-              </li>
+                  {menu.submenu.length > 0 && activeMenu[menu.title] && (
+                    <ul className="mt-5 list-none text-black flex flex-col gap-y-5">
+                      {menu.submenu.map((item, index) => (
+                        <li key={index}>
+                          <Link
+                            href="#"
+                            className="text-lg font-medium capitalize"
+                            onClick={() => setNavCollapse(true)}
+                          >
+                            {item.title}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </li>
+              ))}
             </ul>
           </div>
         </div>
