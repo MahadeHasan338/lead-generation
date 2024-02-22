@@ -154,7 +154,7 @@ export default function Header() {
                     <span>{menu.title}</span>
                     {menu.submenu.length > 0 && (
                       <FaAngleDown
-                        className={`transition-transform duration-500 mt-[5px] text-sm ${
+                        className={`transition-transform duration-500 mt-[3px] text-sm ${
                           activeMenu[menu.title] ? "rotate-180" : ""
                         }`}
                       />
