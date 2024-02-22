@@ -29,24 +29,3 @@ html {
 .button-primary {
   @apply uppercase py-4 px-9 bg-primary hover:bg-black hover:text-white transition-all duration-300 text-[17px] font-bold rounded-[100px] tracking-[2px];
 }
-
-.custom-shape-divider-bottom-1708545494 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1708545494 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 39px;
-}
-
-.custom-shape-divider-bottom-1708545494 .shape-fill {
-  fill: #ffffff;
-}
