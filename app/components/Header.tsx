@@ -67,10 +67,6 @@ export default function Header() {
     }));
   };
 
-  const transitionStyle = {
-    transition: "max-height 0.5s ease-in-out",
-  };
-
   return (
     <header
       className={`backdrop-filter backdrop-blur-lg ${
@@ -115,14 +111,8 @@ export default function Header() {
 
       {/* Mobile navbar */}
       <nav className="font-bold pl-2 pr-3 py-4 flex lg:hidden items-center justify-between">
-        <Link href="/" className="h-[70px] w-[225px] relative">
-          <Image
-            src={logo}
-            alt="logo"
-            layout="fill"
-            objectFit="contain"
-            priority
-          />
+        <Link href="/" className="">
+          <Image src={logo} alt="logo" width={225} height={70} priority />
         </Link>
         <CgMenuRight size={20} onClick={() => setNavCollapse(false)} />
 

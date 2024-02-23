@@ -8,6 +8,12 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        "service-bg": "url('/back-min.png')",
+      },
+      backgroundSize: {
+        "auto-100": "auto calc(100%)",
+      },
       colors: {
         primary: "#FFC80A",
         "light-yellow": "#E0BC74",

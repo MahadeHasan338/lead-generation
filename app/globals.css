@@ -29,3 +29,15 @@ html {
 .button-primary {
   @apply uppercase py-4 px-9 bg-primary hover:bg-black hover:text-white transition-all duration-300 text-[17px] font-bold rounded-[100px] tracking-[2px];
 }
+
+@media (min-width: 768px) {
+  .bg-service-size {
+    background-size: auto 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .bg-service-size {
+    background-size: 100% auto;
+  }
+}

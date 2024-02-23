@@ -1,6 +1,6 @@
 import Image from "next/image";
-import hero from "@/public/hero.png";
 import { didact_gothic } from "@/app/fonts";
+import hero from "@/public/hero.png";
 
 const Hero = () => {
   return (
@@ -27,7 +27,7 @@ const Hero = () => {
             <button className="button-primary">Book a call now!</button>
           </div>
         </div>
-        <Image src={hero} alt="hero"></Image>
+        <Image src={hero} priority alt="hero"></Image>
       </div>
     </section>
   );
