@@ -1,4 +1,5 @@
 import { didact_gothic } from "@/app/fonts";
+import "../css/services.css";
 
 const services = [
   {
@@ -101,10 +102,8 @@ const services = [
 
 const Services = () => {
   return (
-    <div
-      className="bg-service-bg bg-[left_top_4rem] bg-no-repeat bg-service-size"
-    >
-      <div className="default-container text-center w-full h-full py-16">
+    <div className="bg-service-bg bg-[left_top_2rem] xl:bg-[left_top_4rem] bg-no-repeat bg-service-size">
+      <div className="default-container text-center w-full h-full pt-16 pb-5 xl:py-28">
         <div className="flex flex-col space-y-6 mb-16">
           <h2
             className={`${didact_gothic.className} text-[25px] sm:text-3xl font-semibold leading-8 sm:leading-10 w-[97%] xl:80%`}
