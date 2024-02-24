@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       backgroundImage: {
         "service-bg": "url('/back-min.png')",
+        "about-bg": "url('/deepak.png')",
       },
       backgroundSize: {
         "auto-100": "auto calc(100%)",

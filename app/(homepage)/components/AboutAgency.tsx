@@ -26,7 +26,7 @@ const AboutAgency = () => {
             className="basis-1/2 order-2 xl:order-1"
             src={agency}
             priority
-            alt="hero"
+            alt="agency"
           ></Image>
           <div className="order-1 xl:order-2 basis-1/2 text-center xl:text-left">
             <h2
