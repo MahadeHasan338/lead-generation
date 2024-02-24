@@ -1,5 +1,4 @@
 import { didact_gothic } from "@/app/fonts";
-import "../css/curves.css";
 
 const Curves = () => {
   return (

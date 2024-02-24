@@ -1,4 +1,4 @@
-import { didact_gothic } from "@/app/fonts";
+import { didact_gothic } from "@/app/fonts"
 import "../css/services.css";
 
 const services = [
@@ -111,7 +111,7 @@ const Services = () => {
             Accelerate Your Business Growth With Our Proven Lead Generation
             Services
           </h2>
-          <p className="text-lg font-normal text-[#6e6e6e]">
+          <p className="text-lg font-normal text-paragraph">
             Lead Generation is what we do. We live and breathe to generate
             leads. Connecting people is in our blood. We are a
             <span className="font-bold">

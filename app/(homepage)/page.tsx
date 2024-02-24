@@ -3,6 +3,8 @@ import Curves from "./components/Curves";
 import Services from "./components/Services";
 import AboutAgency from "./components/AboutAgency";
 import AboutMe from "./components/AboutMe";
+import Testimonials from "./components/Testimonials";
+import Investigation from "./components/Investigation";
 
 const Home = async () => {
   return (
@@ -13,6 +15,7 @@ const Home = async () => {
       <Services />
       <AboutAgency />
       <AboutMe />
+      <Testimonials />
     </>
   );
 };

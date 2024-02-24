@@ -11,12 +11,14 @@ const config: Config = {
       backgroundImage: {
         "service-bg": "url('/back-min.png')",
         "about-bg": "url('/deepak.png')",
+        "testimonial-bg": "url('/testimonials.webp')",
       },
       backgroundSize: {
         "auto-100": "auto calc(100%)",
       },
       colors: {
         primary: "#FFC80A",
+        paragraph: "#6e6e6e",
         "light-yellow": "#E0BC74",
       },
     },
