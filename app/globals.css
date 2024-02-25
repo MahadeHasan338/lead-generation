@@ -27,7 +27,7 @@ html {
 }
 
 .button-primary {
-  @apply uppercase py-3 px-9 bg-primary hover:bg-black hover:text-white transition-all duration-300 text-[17px] font-bold rounded-[100px] tracking-[2px];
+  @apply uppercase py-3 px-9 bg-primary hover:bg-black hover:text-white transition-all duration-300 text-[17px] font-semibold rounded-[100px] tracking-[2px];
 }
 
 .bg-gradient-yellow {
@@ -40,7 +40,6 @@ html {
 }
 
 /* curves */
-
 .custom-shape-divider-top-1708621683 {
   position: absolute;
   top: 0;

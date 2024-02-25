@@ -34,7 +34,7 @@ const AboutMe = () => {
               <p className="text-lg font-normal text-paragraph pb-10">
                 Speak to you soon! Deepak
               </p>
-              <button className="button-primary !font-semibold">Call Us</button>
+              <button className="button-primary">Call Us</button>
             </div>
 
             <div className="basis-1/2"></div>

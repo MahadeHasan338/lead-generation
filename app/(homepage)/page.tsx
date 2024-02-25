@@ -5,6 +5,9 @@ import AboutAgency from "./components/AboutAgency";
 import AboutMe from "./components/AboutMe";
 import Testimonials from "./components/Testimonials";
 import Investigation from "./components/Investigation";
+import MaximitePotential from "./components/MaximitePotential";
+import Qualification from "./components/Qualification";
+import Footer from "../components/Footer";
 
 const Home = async () => {
   return (
@@ -17,6 +20,9 @@ const Home = async () => {
       <AboutMe />
       <Testimonials />
       <Investigation />
+      <MaximitePotential />
+      <Qualification />
+      <Footer/>
     </>
   );
 };

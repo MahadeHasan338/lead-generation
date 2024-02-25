@@ -54,7 +54,7 @@ const AboutAgency = () => {
               are not just lead-generating experts but also digital marketers
               and sales mentors.
             </p>
-            <button className="button-primary !font-semibold">
+            <button className="button-primary">
               Contact Us
             </button>
           </div>

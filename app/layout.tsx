@@ -3,6 +3,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import { ReactNode } from "react";
 import { barlow } from "./fonts";
 import Header from "@/app/components/Header";
+import Footer from "./components/Footer";
 import "./globals.css";
 
 interface RootLayoutProps {
@@ -24,6 +25,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <Header />
         {children}
         <SpeedInsights />
+        <Footer />
       </body>
     </html>
   );
