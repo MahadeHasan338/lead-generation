@@ -4,7 +4,7 @@ import agency from "@/public/agency-bg.webp";
 
 const AboutAgency = () => {
   return (
-    <div className="bg-[#F4F4F4] py-20 xl:py-32 relative">
+    <div className="bg-[#F4F4F4] py-20 xl:py-32 relative" id="aboutAgency">
       <div className="custom-shape-divider-top-1708621683">
         <svg
           data-name="Layer 1"

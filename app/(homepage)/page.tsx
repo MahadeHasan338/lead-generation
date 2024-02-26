@@ -22,7 +22,6 @@ const Home = async () => {
       <Investigation />
       <MaximitePotential />
       <Qualification />
-      <Footer/>
     </>
   );
 };
