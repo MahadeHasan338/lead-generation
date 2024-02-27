@@ -16,30 +16,26 @@ export default function Header() {
     {
       title: "Who We Serve",
       submenu: [
-        { title: "B2B Lead Generation" },
-        { title: "Linkedin Lead Generation" },
-        { title: "Email Marketing" },
-        { title: "Facebook Page Product Review" },
-      ],
-    },
-    {
-      title: "Tools Services",
-      submenu: [
-        { title: "Sales Navigator Premium Subscriptions" },
-        { title: "Apollo Bulk Exports" },
-      ],
-    },
-    {
-      title: "About",
-      submenu: [
-        { title: "About Us" },
-        { title: "Contact" },
-        { title: "Testimonial" },
+        { title: "B2B Lead Generation", link: "#" },
+        { title: "Linkedin Lead Generation", link: "#" },
+        { title: "Email Marketing", link: "#" },
+        { title: "Facebook Page Product Review", link: "#" },
       ],
     },
     {
       title: "Why Us",
-      submenu: [],
+      submenu: [
+        { title: "Why Data Peak", link: "dd" },
+        { title: "Testimonial & Reviews", link: "#" },
+      ],
+    },
+    {
+      title: "Tools Services",
+      link: "#",
+    },
+    {
+      title: "Contact Us",
+      link: "/contact",
     },
   ];
 
@@ -71,7 +67,7 @@ export default function Header() {
     <header
       className={`backdrop-filter backdrop-blur-lg ${
         scroll ? "border-b bg-white bg-opacity-40" : "border-b-0"
-      } border-gray-200 z-30 min-w-full flex flex-col fixed`}
+      } border-gray-200 z-[9999] min-w-full flex flex-col fixed`}
     >
       {/* Desktop Navbar */}
       <nav className="nav-container hidden lg:flex items-center justify-between">
@@ -82,20 +78,20 @@ export default function Header() {
           {menus.map((menu, index) => (
             <li key={index} className="group relative">
               <Link
-                href="#"
+                href={menu.submenu ? "#" : menu.link} // Use submenu link if available, otherwise use menu link
                 className="hover:text-light-yellow transition-all duration-500 text-lg font-medium capitalize flex items-center space-x-2"
               >
                 <span>{menu.title}</span>
-                {menu.submenu.length > 0 && (
+                {menu.submenu && menu.submenu.length > 0 && (
                   <FaAngleDown className="mt-[5px] text-md" />
                 )}
               </Link>
-              {menu.submenu.length > 0 && (
+              {menu.submenu && menu.submenu.length > 0 && (
                 <ul className="py-2 px-4 shadow-sm invisible opacity-0 group-hover:visible group-hover:opacity-100 absolute top-9 left-0 transition-all duration-500 flex flex-col space-y-1 bg-white">
                   {menu.submenu.map((subItem, subIndex) => (
                     <li key={subIndex}>
                       <Link
-                        href="#"
+                        href={subItem.link} // Use submenu link
                         className="block hover:text-light-yellow transition-colors duration-500 text-lg font-medium capitalize text-nowrap"
                       >
                         {subItem.title}
@@ -142,7 +138,7 @@ export default function Header() {
                     style={{ color: activeMenu[menu.title] ? "#E0BC74" : "" }}
                   >
                     <span>{menu.title}</span>
-                    {menu.submenu.length > 0 && (
+                    {menu?.submenu && menu?.submenu?.length > 0 && (
                       <FaAngleDown
                         className={`transition-transform duration-500 mt-[3px] text-sm ${
                           activeMenu[menu.title] ? "rotate-180" : ""
@@ -151,7 +147,7 @@ export default function Header() {
                     )}
                   </div>
 
-                  {menu.submenu.length > 0 && (
+                  {menu?.submenu && menu?.submenu?.length > 0 && (
                     <ul
                       className="mt-5 list-none text-black flex flex-col gap-y-5"
                       style={{
@@ -163,7 +159,7 @@ export default function Header() {
                       {menu.submenu.map((item, index) => (
                         <li key={index}>
                           <Link
-                            href="#"
+                            href={item.link} // Use submenu link
                             className="text-lg font-medium capitalize"
                             onClick={() => setNavCollapse(true)}
                           >

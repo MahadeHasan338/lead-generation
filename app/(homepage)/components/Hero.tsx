@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 import { didact_gothic } from "@/app/fonts";
 import hero from "@/public/hero.png";
@@ -10,8 +11,8 @@ const Hero = () => {
           className={`${didact_gothic.className} flex flex-col space-y-5 xl:space-y-8 mt-5 md:mt-10 xl:mt-20 `}
         >
           <h1 className="hidden xl:block text-[70px] font-normal leading-[85px] ">
-            We&apos;ll <span className="font-bold">Book</span> You 20 <br />{" "}
-            Calls In <span className="font-bold">30 Days</span>
+            We&apos;ll <span className="font-bold">Book</span> You 20
+            <br /> Calls In <span className="font-bold">30 Days</span>
           </h1>
 
           <h1 className="xl:hidden text-[40px] md:text-[50px] md:px-5 lg:px-0 font-normal leading-[60px]">
@@ -24,7 +25,9 @@ const Hero = () => {
           </h3>
           <h3 className="text-xl font-semibold">(Just Give Us 6 Months)</h3>
           <div className="inline-block">
-            <button className="button-primary">Book a call now!</button>
+            <Link href="/contact">
+              <button className="button-primary">Contact Us!</button>
+            </Link>
           </div>
         </div>
         <div className="text-center xl:text-right">

@@ -39,7 +39,7 @@ html {
   );
 }
 
-/* curves */
+/*random curves */
 .custom-shape-divider-top-1708621683 {
   position: absolute;
   top: 0;
@@ -123,4 +123,33 @@ html {
 
 .custom-shape-divider-bottom-1708786721 .shape-fill {
   fill: #ffffff;
+}
+
+/* halfmoon curve */
+.custom-shape-divider-top-1709056917 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1709056917 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 263px;
+}
+
+.custom-shape-divider-top-1709056917 .shape-fill {
+  fill: #fff6d1;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-top-1709056917 svg {
+    width: calc(100% + 1.3px);
+    height: 160px;
+  }
 }

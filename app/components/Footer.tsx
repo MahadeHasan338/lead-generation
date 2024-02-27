@@ -27,7 +27,7 @@ export default function Footer() {
           <div className="flex flex-col space-y-4 text-white">
             <Link href="#aboutAgency">Why Pearl Lemon Leads</Link>
             <Link href="#testimonial">Client Testimonials</Link>
-            <Link href="#">Contact Us</Link>
+            <Link href="/contact">Contact Us</Link>
           </div>
 
           <div style={mapWrapperStyle}>

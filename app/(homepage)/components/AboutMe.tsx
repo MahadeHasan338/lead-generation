@@ -1,4 +1,5 @@
 import { didact_gothic } from "@/app/fonts";
+import Link from "next/link";
 
 const AboutMe = () => {
   return (
@@ -23,7 +24,8 @@ const AboutMe = () => {
               <p className="text-lg font-normal text-paragraph pb-5">
                 Hey! Thanks for stopping by! If it’s your first time here,
                 welcome! You’ve landed on our site because you need a steady
-                stream of qualified leads to <span className="font-bold">GROW your business</span>.
+                stream of qualified leads to{" "}
+                <span className="font-bold">GROW your business</span>.
               </p>
               <p className="text-lg font-normal text-paragraph pb-5">
                 Well, you’ve come to the right place! Browse our video case
@@ -34,7 +36,9 @@ const AboutMe = () => {
               <p className="text-lg font-normal text-paragraph pb-10">
                 Speak to you soon! Deepak
               </p>
-              <button className="button-primary">Call Us</button>
+              <Link href="/contact">
+                <button className="button-primary">Contact Us</button>
+              </Link>
             </div>
 
             <div className="basis-1/2"></div>

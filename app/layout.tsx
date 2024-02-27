@@ -23,6 +23,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         suppressHydrationWarning={true}
       >
         <Header />
+        <div className="h-[102px] lg:h-[95px]"></div>
         {children}
         <SpeedInsights />
         <Footer />

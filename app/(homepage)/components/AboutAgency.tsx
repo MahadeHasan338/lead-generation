@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 import { didact_gothic } from "@/app/fonts";
 import agency from "@/public/agency-bg.webp";
@@ -54,9 +55,9 @@ const AboutAgency = () => {
               are not just lead-generating experts but also digital marketers
               and sales mentors.
             </p>
-            <button className="button-primary">
-              Contact Us
-            </button>
+            <Link href="/contact">
+              <button className="button-primary">Contact Us</button>
+            </Link>
           </div>
         </div>
       </div>

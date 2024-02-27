@@ -44,7 +44,7 @@ const Qualification = () => {
               </p>
 
               <button className="button-primary !bg-[#59BA41] !text-white">
-                Book a call
+                Contact Us
               </button>
             </div>
           </div>
