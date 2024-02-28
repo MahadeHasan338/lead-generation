@@ -55,12 +55,8 @@ const Testimonials = () => {
           {testimonials &&
             testimonials?.map((testimonial) => (
               <div key={testimonial.id} className="text-left pb-12">
-                <p className="text-lg font-normal text-paragraph pb-4">
-                  {testimonial.message}
-                </p>
-                <p className="text-2xl text-paragraph">
-                  {testimonial.name}
-                </p>
+                <p className="default-text-style pb-4">{testimonial.message}</p>
+                <p className="text-2xl text-paragraph">{testimonial.name}</p>
               </div>
             ))}
         </div>

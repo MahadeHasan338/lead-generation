@@ -125,13 +125,13 @@ const MaximitePotential = () => {
             Maximise Your Business Potential With Our Lead Generation Agency In
             The UK
           </h2>
-          <p className="text-lg font-normal text-paragraph">
+          <p className="default-text-style">
             Lead generation is crucial to business growth and development. By
             identifying and engaging with high-quality leads, businesses can
             expand their reach, increase sales opportunities, and improve
             conversion rates.
           </p>
-          <p className="text-lg font-normal text-paragraph">
+          <p className="default-text-style">
             Take a look at some of the most prominent benefits of our lead
             generation potentials here.
           </p>

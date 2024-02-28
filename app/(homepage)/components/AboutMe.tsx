@@ -21,19 +21,19 @@ const AboutMe = () => {
               <h3 className="text-xl font-semibold py-7">
                 Lead Generation Expert And Founder Of Pearl Lemon Leads
               </h3>
-              <p className="text-lg font-normal text-paragraph pb-5">
+              <p className="default-text-style pb-5">
                 Hey! Thanks for stopping by! If it’s your first time here,
                 welcome! You’ve landed on our site because you need a steady
                 stream of qualified leads to{" "}
                 <span className="font-bold">GROW your business</span>.
               </p>
-              <p className="text-lg font-normal text-paragraph pb-5">
+              <p className="default-text-style pb-5">
                 Well, you’ve come to the right place! Browse our video case
                 studies, client testimonials and verified reviews, then let’s
                 have a Discovery Call – 10 minutes where we can discuss what’s
                 on your mind.
               </p>
-              <p className="text-lg font-normal text-paragraph pb-10">
+              <p className="default-text-style pb-10">
                 Speak to you soon! Deepak
               </p>
               <Link href="/contact">

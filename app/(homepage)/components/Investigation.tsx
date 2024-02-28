@@ -37,13 +37,13 @@ const Investigation = () => {
                 Investing In Our Lead Generation Agency In London Is The Right
                 Thing To Do
               </h2>
-              <p className="text-lg font-normal text-paragraph py-[15px]">
+              <p className="default-text-style py-[15px]">
                 Investing in a lead generation agency can be a game-changer for
                 businesses looking to grow and succeed. You might have tried
                 Google Ads at some point, but maybe it just didn’t work out for
                 you.
               </p>
-              <p className="text-lg font-normal text-paragraph pb-[15px]">
+              <p className="default-text-style pb-[15px]">
                 Our lead generation agency in London offers a range of services
                 designed to help businesses reach their full potential. Whether
                 you’re looking to increase sales, acquire new customers, or
@@ -84,13 +84,13 @@ const Investigation = () => {
                 Investing In Our Lead Generation Agency In London Is The Right
                 Thing To Do
               </h2>
-              <p className="text-lg font-normal text-paragraph py-[15px]">
+              <p className="default-text-style py-[15px]">
                 Investing in a lead generation agency can be a game-changer for
                 businesses looking to grow and succeed. You might have tried
                 Google Ads at some point, but maybe it just didn’t work out for
                 you.
               </p>
-              <p className="text-lg font-normal text-paragraph pb-[15px]">
+              <p className="default-text-style pb-[15px]">
                 Our lead generation agency in London offers a range of services
                 designed to help businesses reach their full potential. Whether
                 you’re looking to increase sales, acquire new customers, or
@@ -131,13 +131,13 @@ const Investigation = () => {
                 Investing In Our Lead Generation Agency In London Is The Right
                 Thing To Do
               </h2>
-              <p className="text-lg font-normal text-paragraph py-[15px]">
+              <p className="default-text-style py-[15px]">
                 Investing in a lead generation agency can be a game-changer for
                 businesses looking to grow and succeed. You might have tried
                 Google Ads at some point, but maybe it just didn’t work out for
                 you.
               </p>
-              <p className="text-lg font-normal text-paragraph pb-[15px]">
+              <p className="default-text-style pb-[15px]">
                 Our lead generation agency in London offers a range of services
                 designed to help businesses reach their full potential. Whether
                 you’re looking to increase sales, acquire new customers, or
@@ -178,13 +178,13 @@ const Investigation = () => {
                 Investing In Our Lead Generation Agency In London Is The Right
                 Thing To Do
               </h2>
-              <p className="text-lg font-normal text-paragraph py-[15px]">
+              <p className="default-text-style py-[15px]">
                 Investing in a lead generation agency can be a game-changer for
                 businesses looking to grow and succeed. You might have tried
                 Google Ads at some point, but maybe it just didn’t work out for
                 you.
               </p>
-              <p className="text-lg font-normal text-paragraph pb-[15px]">
+              <p className="default-text-style pb-[15px]">
                 Our lead generation agency in London offers a range of services
                 designed to help businesses reach their full potential. Whether
                 you’re looking to increase sales, acquire new customers, or

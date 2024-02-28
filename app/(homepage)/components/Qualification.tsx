@@ -19,23 +19,23 @@ const Qualification = () => {
                 Investing In Our Lead Generation Agency In London Is The Right
                 Thing To Do
               </h2>
-              <p className="text-lg font-normal text-paragraph py-[15px]">
+              <p className="default-text-style py-[15px]">
                 Failure to generate a consistent stream of qualified leads is
                 the #1 reason small businesses struggle to scale up.
               </p>
-              <p className="text-lg font-normal text-paragraph pb-[15px]">
+              <p className="default-text-style pb-[15px]">
                 When you outsource your B2B lead generation to us, we will take
                 away the task of creating interest and generating leads from
                 your sales team so they can do, what they do best, convert leads
                 into sales.
               </p>
-              <p className="text-lg font-normal text-paragraph pb-[15px]">
+              <p className="default-text-style pb-[15px]">
                 It’s time to move on from spending countless hours and resources
                 on strategies that only give you disappointing results. And if
                 you’re looking for a more effective and efficient way to
                 generate leads, our lead generation company is the answer.
               </p>
-              <p className="text-lg font-normal text-paragraph mb-12">
+              <p className="default-text-style mb-12">
                 Lead generation is one of our specialities, and our team of
                 experts has the knowledge and expertise needed to assist you. To
                 help businesses generate high-quality leads and reach their

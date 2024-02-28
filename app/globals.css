@@ -30,6 +30,10 @@ html {
   @apply uppercase py-3 px-9 bg-primary hover:bg-black hover:text-white transition-all duration-300 text-[17px] font-semibold rounded-[100px] tracking-[2px];
 }
 
+.default-text-style {
+  @apply text-lg font-normal text-paragraph;
+}
+
 .bg-gradient-yellow {
   background-color: transparent;
   background-image: linear-gradient(

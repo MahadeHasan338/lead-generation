@@ -33,21 +33,21 @@ const AboutAgency = () => {
               The Lead Generation Agency That Transforms Businesses With Quality
               Leads That Convert
             </h2>
-            <p className="text-lg font-normal text-paragraph py-[15px]">
+            <p className="default-text-style py-[15px]">
               Lead Generation is what we do. We live and breathe to generate
               leads. Connecting people is in our blood. We are a full-service UK
               lead gen agency ready to go to work for you!
             </p>
-            <p className="text-lg font-normal italic text-paragraph pb-[15px]">
+            <p className="default-text-style italic pb-[15px]">
               Want to maximise your reach?
             </p>
-            <p className="text-lg font-normal italic text-paragraph pb-[15px]">
+            <p className="default-text-style italic pb-[15px]">
               Need to convert more prospects?
             </p>
-            <p className="text-lg font-normal italic text-paragraph pb-[15px]">
+            <p className="default-text-style italic pb-[15px]">
               Badly want to drive growth?
             </p>
-            <p className="text-lg font-normal text-paragraph pb-10">
+            <p className="default-text-style pb-10">
               We’re the lead generation agency you’re looking for. Unlike other
               lead generation companies in London, we have a unique approach to
               lead gen. We build relationships with your leads, offer a wide
