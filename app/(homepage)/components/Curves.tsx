@@ -1,6 +1,6 @@
 import { didact_gothic } from "@/app/fonts";
 
-const Curves = () => {
+const Curves = async () => {
   return (
     <div className="bg-[#F4F4F4] h-[320px] relative">
       <div className="custom-shape-divider-top-1708621683">

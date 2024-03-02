@@ -39,7 +39,7 @@ const testimonials = [
   },
 ];
 
-const Testimonials = () => {
+const Testimonials = async () => {
   return (
     <div className="bg-gradient-yellow relative" id="testimonial">
       <div className="default-container text-center w-full h-full pt-4 pb-16 xl:py-20">

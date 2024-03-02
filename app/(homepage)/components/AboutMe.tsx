@@ -1,7 +1,7 @@
 import { didact_gothic } from "@/app/fonts";
 import Link from "next/link";
 
-const AboutMe = () => {
+const AboutMe = async () => {
   return (
     <>
       <h2

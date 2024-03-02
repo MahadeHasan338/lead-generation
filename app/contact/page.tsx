@@ -14,7 +14,7 @@ const Contact = async () => {
         headingBold="Get"
         heading="In Touch!"
         subHeading="Is Your Sales Team Hungry For More Qualified Leads? Let’s Chat!"
-        height="120"
+        showOnMobile
       />
 
       <div className="default-container xl:my-20 mb-16 mt-5">
@@ -39,8 +39,8 @@ const Contact = async () => {
               at a time that is convenient for you!
             </p>
             <p className="default-text-style pb-[15px]">
-              Alternatively, drop me a line in social media below and I’ll
-              get back to you ASAP!
+              Alternatively, drop me a line in social media below and I’ll get
+              back to you ASAP!
             </p>
             <div className="flex items-center justify-center xl:justify-start space-x-4 my-1 xl:mb-5">
               <Link href="#">

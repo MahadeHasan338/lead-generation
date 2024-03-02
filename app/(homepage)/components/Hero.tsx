@@ -3,7 +3,7 @@ import Image from "next/image";
 import { didact_gothic } from "@/app/fonts";
 import hero from "@/public/hero.png";
 
-const Hero = () => {
+const Hero = async () => {
   return (
     <section id="home" className="default-container mt-2">
       <div className="grid grid-cols-1 xl:grid-cols-2 xl:items-center space-y-14 xl:space-x-[30px] text-center xl:text-left  pb-16">

@@ -1,3 +1,4 @@
+import Cards from "@/app/components/Cards";
 import { didact_gothic } from "@/app/fonts";
 
 const potentials = [
@@ -100,7 +101,7 @@ const potentials = [
   },
 ];
 
-const MaximitePotential = () => {
+const MaximitePotential = async () => {
   return (
     <div className="bg-gradient-yellow relative">
       <div className="custom-shape-divider-top-1708621683">
@@ -137,28 +138,7 @@ const MaximitePotential = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 xl:gap-20">
-          {potentials &&
-            potentials.map((potential) => (
-              <div
-                key={potential.id}
-                className="border border-[#f7f7f7] hover:bg-[#F4F4F4] transition-all duration-300 rounded-[20px] p-10 md:p-5 lg:p-10 bg-white text-center xl:text-left"
-              >
-                <span className="inline-block">{potential.icon}</span>
-                <h6
-                  className={`${didact_gothic.className} text-[22px] font-semibold mt-10 mb-[9px]`}
-                >
-                  {potential.title}
-                </h6>
-                <p className="text-[18px] leading-[26px] text-[#333]">
-                  {potential.description}
-                </p>
-                <button className="uppercase mt-8 text-[12px] text-[#242424] font-semibold tracking-[2px] underline underline-offset-8 decoration-primary decoration-2 hover:decoration-[#242424] hover:text-primary transition-all duration-300">
-                  Learn more
-                </button>
-              </div>
-            ))}
-        </div>
+        <Cards data={potentials} />
       </div>
 
       <div className="custom-shape-divider-bottom-1708786721">

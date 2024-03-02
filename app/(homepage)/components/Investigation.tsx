@@ -5,7 +5,7 @@ import img2 from "@/public/investigation/2.png";
 import img3 from "@/public/investigation/3.png";
 import img4 from "@/public/investigation/4.png";
 
-const Investigation = () => {
+const Investigation = async () => {
   return (
     <>
       {/* part one */}

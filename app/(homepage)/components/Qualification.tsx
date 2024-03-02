@@ -2,7 +2,7 @@ import Image from "next/image";
 import { didact_gothic } from "@/app/fonts";
 import qualification from "@/public/qualification.png";
 
-const Qualification = () => {
+const Qualification = async () => {
   return (
     <>
       <div className="bg-white py-20 xl:py-32 relative">

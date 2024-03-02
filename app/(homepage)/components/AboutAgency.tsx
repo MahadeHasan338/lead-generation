@@ -3,7 +3,7 @@ import Image from "next/image";
 import { didact_gothic } from "@/app/fonts";
 import agency from "@/public/agency-bg.webp";
 
-const AboutAgency = () => {
+const AboutAgency = async () => {
   return (
     <div className="bg-[#F4F4F4] py-20 xl:py-32 relative" id="aboutAgency">
       <div className="custom-shape-divider-top-1708621683">

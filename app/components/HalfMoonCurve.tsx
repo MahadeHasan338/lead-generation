@@ -4,7 +4,7 @@ const HalfMoonCurve = async ({
   headingBold,
   heading,
   subHeading,
-  height,
+  showOnMobile,
 }: any) => {
   return (
     <>
@@ -17,7 +17,12 @@ const HalfMoonCurve = async ({
             >
               <span className="font-semibold">{headingBold}</span> {heading}
             </h1>
-            <p className="text-[22px] font-medium leading-8 text-paragraph text-center">
+
+            <p
+              className={`${
+                !showOnMobile ? "hidden sm:block" : "block"
+              } text-[22px] font-medium leading-8 text-paragraph text-center px-5 md:px-20`}
+            >
               {subHeading}
             </p>
           </div>

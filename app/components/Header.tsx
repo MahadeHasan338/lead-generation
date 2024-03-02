@@ -16,8 +16,11 @@ export default function Header() {
     {
       title: "Who We Serve",
       submenu: [
-        { title: "B2B Lead Generation", link: "#" },
-        { title: "Linkedin Lead Generation", link: "#" },
+        {
+          title: "Linkedin Lead Generation",
+          link: "/linkedin-lead-generation",
+        },
+        { title: "B2B Lead Generation", link: "" },
         { title: "Email Marketing", link: "#" },
         { title: "Facebook Page Product Review", link: "#" },
       ],
