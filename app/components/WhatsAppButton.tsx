@@ -73,7 +73,7 @@ const WhatsAppButton: React.FC<WhatsAppButtonProps> = ({
     window.open(whatsappUrl, "_blank");
   };
 
-  return <a onClick={handleClick}>{whatsappIcon}</a>;
+  return <a onClick={handleClick} className="cursor-pointer">{whatsappIcon}</a>;
 };
 
 export default WhatsAppButton;
