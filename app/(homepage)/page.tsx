@@ -10,7 +10,7 @@ import Qualification from "./components/Qualification";
 import WhatsAppButton from "../components/WhatsAppButton";
 
 const Home = async () => {
-  const phoneNumber = "01728819680";
+  const phoneNumber = "+88 01704262772";
   const message = "Hello Pearl Lemon Leads!";
   return (
     <>
