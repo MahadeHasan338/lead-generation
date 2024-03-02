@@ -43,6 +43,18 @@ html {
   );
 }
 
+@media (min-width: 768px) {
+  .bg-service-size {
+    background-size: auto calc(100% - 60px);
+  }
+}
+
+@media (max-width: 767px) {
+  .bg-service-size {
+    background-size: 100% auto;
+  }
+}
+
 /*random curves */
 .custom-shape-divider-top-1708621683 {
   position: absolute;

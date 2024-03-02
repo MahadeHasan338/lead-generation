@@ -1,5 +1,5 @@
-import Cards from "@/app/components/Cards";
 import { didact_gothic } from "@/app/fonts";
+import Cards from "@/app/components/Cards";
 
 const potentials = [
   {

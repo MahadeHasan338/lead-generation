@@ -1,5 +1,4 @@
 import { didact_gothic } from "@/app/fonts";
-import "../css/services.css";
 import Cards from "@/app/components/Cards";
 
 const services = [
