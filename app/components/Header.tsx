@@ -20,7 +20,7 @@ export default function Header() {
           title: "Linkedin Lead Generation",
           link: "/linkedin-lead-generation",
         },
-        { title: "B2B Lead Generation", link: "" },
+        { title: "B2B Lead Generation", link: "#" },
         { title: "Email Marketing", link: "#" },
         { title: "Facebook Page Product Review", link: "#" },
       ],
@@ -28,7 +28,7 @@ export default function Header() {
     {
       title: "Why Us",
       submenu: [
-        { title: "Why Data Peak", link: "dd" },
+        { title: "Why Data Peak", link: "#" },
         { title: "Testimonial & Reviews", link: "#" },
       ],
     },
@@ -81,7 +81,7 @@ export default function Header() {
           {menus.map((menu, index) => (
             <li key={index} className="group relative">
               <Link
-                href={menu.submenu ? "#" : menu.link} // Use submenu link if available, otherwise use menu link
+                href={menu.submenu ? "#" : menu.link}
                 className="hover:text-light-yellow transition-all duration-500 text-lg font-medium capitalize flex items-center space-x-2"
               >
                 <span>{menu.title}</span>
@@ -94,7 +94,7 @@ export default function Header() {
                   {menu.submenu.map((subItem, subIndex) => (
                     <li key={subIndex}>
                       <Link
-                        href={subItem.link} // Use submenu link
+                        href={subItem.link}
                         className="block hover:text-light-yellow transition-colors duration-500 text-lg font-medium capitalize text-nowrap"
                       >
                         {subItem.title}
@@ -110,7 +110,7 @@ export default function Header() {
 
       {/* Mobile navbar */}
       <nav className="font-bold pl-2 pr-3 py-4 flex lg:hidden items-center justify-between">
-        <Link href="/" className="">
+        <Link href="/">
           <Image src={logo} alt="logo" width={225} height={70} priority />
         </Link>
         <CgMenuRight size={20} onClick={() => setNavCollapse(false)} />
@@ -136,23 +136,28 @@ export default function Header() {
               {menus.map((menu) => (
                 <li key={menu.title} className="text-lg font-medium capitalize">
                   <div
-                    className="flex items-center space-x-2 cursor-pointer transition-colors duration-500"
-                    onClick={() => toggleDropdown(menu.title)}
-                    style={{ color: activeMenu[menu.title] ? "#E0BC74" : "" }}
+                    onClick={() => {
+                      if (menu.submenu) {
+                        toggleDropdown(menu?.title);
+                      } else {
+                        setNavCollapse(true);
+                      }
+                    }}
                   >
-                    <span>{menu.title}</span>
-                    {menu?.submenu && menu?.submenu?.length > 0 && (
-                      <FaAngleDown
-                        className={`transition-transform duration-500 mt-[3px] text-sm ${
-                          activeMenu[menu.title] ? "rotate-180" : ""
-                        }`}
-                      />
-                    )}
+                    <Link
+                      href={menu.submenu ? "#" : menu.link}
+                      className="hover:text-light-yellow transition-all duration-500 text-lg font-medium capitalize flex items-center space-x-2"
+                    >
+                      <span>{menu.title}</span>
+                      {menu.submenu && menu.submenu.length > 0 && (
+                        <FaAngleDown className="mt-[5px] text-md" />
+                      )}
+                    </Link>
                   </div>
 
                   {menu?.submenu && menu?.submenu?.length > 0 && (
                     <ul
-                      className="mt-5 list-none text-black flex flex-col gap-y-5"
+                      className="list-none text-black flex flex-col"
                       style={{
                         maxHeight: activeMenu[menu.title] ? "300px" : "0",
                         overflow: "hidden",
@@ -160,15 +165,18 @@ export default function Header() {
                       }}
                     >
                       {menu.submenu.map((item, index) => (
-                        <li key={index}>
-                          <Link
-                            href={item.link} // Use submenu link
-                            className="text-lg font-medium capitalize"
-                            onClick={() => setNavCollapse(true)}
-                          >
-                            {item.title}
-                          </Link>
-                        </li>
+                        <>
+                          <span className="mt-5"></span>
+                          <li key={index}>
+                            <Link
+                              href={item.link}
+                              className="text-lg font-medium capitalize"
+                              onClick={() => setNavCollapse(true)}
+                            >
+                              {item.title}
+                            </Link>
+                          </li>
+                        </>
                       ))}
                     </ul>
                   )}

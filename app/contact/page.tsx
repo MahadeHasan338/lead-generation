@@ -10,6 +10,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 const Contact = async () => {
   return (
     <>
+      <div className="pt-[102px] lg:pt-[95px]"></div>
       <HalfMoonCurve
         headingBold="Get"
         heading="In Touch!"

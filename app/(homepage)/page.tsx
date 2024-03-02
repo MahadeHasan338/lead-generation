@@ -14,6 +14,7 @@ const Home = async () => {
   const message = "Hello Pearl Lemon Leads!";
   return (
     <>
+      <div className="h-[102px] lg:h-[95px]"></div>
       <Hero />
       <Curves />
       <Services />

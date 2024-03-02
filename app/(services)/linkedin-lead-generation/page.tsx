@@ -61,6 +61,7 @@ const services = [
 const LinkedinLeadGeneration = async () => {
   return (
     <>
+      <div className="h-[102px] lg:h-[95px]"></div>
       <HalfMoonCurve
         headingBold="LinkedIn"
         heading="Lead Generation"
