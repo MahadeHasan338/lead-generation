@@ -20,7 +20,7 @@ export default function Header() {
           title: "Linkedin Lead Generation",
           link: "/linkedin-lead-generation",
         },
-        { title: "B2B Lead Generation", link: "#" },
+        { title: "B2B Lead Generation", link: "/b2b-lead-generation" },
         { title: "Email Marketing", link: "#" },
         { title: "Facebook Page Product Review", link: "#" },
       ],

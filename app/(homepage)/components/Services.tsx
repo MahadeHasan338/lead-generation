@@ -34,7 +34,7 @@ const services = [
     title: "B2B Lead Generation",
     description:
       "We’ll fill your sales funnel with a steady stream of qualified leads to keep your sales team busy!",
-    link: "#",
+    link: "/b2b-lead-generation",
   },
   {
     id: 3,

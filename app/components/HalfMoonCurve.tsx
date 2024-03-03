@@ -13,7 +13,7 @@ const HalfMoonCurve = async ({
         <div className={`!bg-[#FFF6D1] text-black pb-3 relative`}>
           <div className="absolute -top-16 md:-top-5 left-0 right-0 mx-auto z-10">
             <h1
-              className={`${didact_gothic.className} text-[40px] md:text-[60px] leading-[60px] md:leading-[70px] mb-3 text-center`}
+              className={`${didact_gothic.className} text-[40px] md:text-[60px] leading-[60px] md:leading-[70px] mb-3 text-center px-3`}
             >
               <span className="font-semibold">{headingBold}</span> {heading}
             </h1>
