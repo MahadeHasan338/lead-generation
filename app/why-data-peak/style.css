@@ -1,0 +1,7 @@
+.table-header {
+  @apply px-3 py-6 border-2 border-gray-200 text-xl md:text-2xl tracking-[1px] w-1/4 text-nowrap;
+}
+
+.table-data {
+  @apply px-3 py-6 border-2 border-gray-200 text-lg text-[#333] w-1/4;
+}

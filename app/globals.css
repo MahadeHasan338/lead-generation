@@ -6,15 +6,27 @@ html {
   scroll-behavior: smooth !important;
 }
 
-::-webkit-scrollbar {
-  width: 0.5rem;
+.scrollbar {
+  scrollbar-width: thin;
 }
 
-::-webkit-scrollbar-thumb {
-  background-color: #6565656a;
+.scrollbar::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
 }
 
-.scroll-hide::-webkit-scrollbar {
+.scrollbar::-webkit-scrollbar-thumb {
+  background: #a8a8a8;
+  border-radius: 5px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  background-color: #ddd;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.scrollbar::-webkit-scrollbar-button {
   display: none;
 }
 

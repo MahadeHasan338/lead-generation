@@ -52,7 +52,7 @@ const Testimonial = () => {
         showOnMobile={false}
       />
 
-      <div className="bg-gradient-yellow relative" id="testimonial">
+      <div className="bg-gradient-yellow relative">
         <div className="default-container text-center w-full h-full pt-4 pb-16 xl:py-20">
           <div className="flex flex-col space-y-6 mb-16">
             <h2
