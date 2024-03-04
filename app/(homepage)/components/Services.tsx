@@ -51,7 +51,7 @@ const services = [
     title: "Email Marketing",
     description:
       "Forget the script! Our team focusses on building genuine, viable relationships via targeted cold calling.",
-    link: "#",
+    link: "/email-marketing",
   },
   {
     id: 4,
@@ -68,7 +68,7 @@ const services = [
     title: "Facebook Page Product Review",
     description:
       "We’ll work seamlessly with your sales team to take away the arduous task of lead generation so they can focus on conversions.",
-    link: "#",
+    link: "/facebook-product-review",
   },
 ];
 

@@ -58,7 +58,7 @@ const services = [
   },
 ];
 
-const LinkedinLeadGeneration = async () => {
+const Page = async () => {
   return (
     <>
       <div className="h-[102px] lg:h-[95px]"></div>
@@ -306,4 +306,4 @@ const LinkedinLeadGeneration = async () => {
   );
 };
 
-export default LinkedinLeadGeneration;
+export default Page;

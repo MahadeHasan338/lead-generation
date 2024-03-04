@@ -21,15 +21,18 @@ export default function Header() {
           link: "/linkedin-lead-generation",
         },
         { title: "B2B Lead Generation", link: "/b2b-lead-generation" },
-        { title: "Email Marketing", link: "#" },
-        { title: "Facebook Page Product Review", link: "#" },
+        { title: "Email Marketing", link: "/email-marketing" },
+        {
+          title: "Facebook Page Product Review",
+          link: "/facebook-product-review",
+        },
       ],
     },
     {
       title: "Why Us",
       submenu: [
-        { title: "Why Data Peak", link: "#" },
-        { title: "Testimonial & Reviews", link: "#" },
+        { title: "Why Data Peak", link: "/why-data-peak" },
+        { title: "Testimonial & Reviews", link: "/testimonials" },
       ],
     },
     {

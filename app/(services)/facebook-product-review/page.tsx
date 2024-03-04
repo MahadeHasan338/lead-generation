@@ -1,21 +1,17 @@
 import Image from "next/image";
-import Link from "next/link";
-import { MdEmail } from "react-icons/md";
-import { FaFacebookF } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
-import { FaLinkedinIn } from "react-icons/fa";
+import React from "react";
 import HalfMoonCurve from "@/app/components/HalfMoonCurve";
 import contact from "@/public/contact.png";
 
-const Contact = async () => {
+const Page = () => {
   return (
     <>
       <div className="pt-[102px] lg:pt-[95px]"></div>
       <HalfMoonCurve
-        headingBold="Get"
-        heading="In Touch!"
+        headingBold="Facebook"
+        heading="Product Review"
         subHeading="Is Your Sales Team Hungry For More Qualified Leads? Let’s Chat!"
-        showOnMobile
+        showOnMobile={false}
       />
 
       <div className="default-container xl:my-20 mb-16 mt-5">
@@ -43,20 +39,6 @@ const Contact = async () => {
               Alternatively, drop me a line in social media below and I’ll get
               back to you ASAP!
             </p>
-            <div className="flex items-center justify-center xl:justify-start space-x-4 my-1 xl:mb-5">
-              <Link href="#">
-                <MdEmail className="h-8 w-8 text-[#c36]" />
-              </Link>
-              <Link href="#">
-                <FaFacebookF className="h-8 w-8 text-[#c36]" />
-              </Link>
-              <Link href="#">
-                <FaTwitter className="h-8 w-8 text-[#c36]" />
-              </Link>
-              <Link href="#">
-                <FaLinkedinIn className="h-8 w-8 text-[#c36]" />
-              </Link>
-            </div>
           </div>
         </div>
       </div>
@@ -64,4 +46,4 @@ const Contact = async () => {
   );
 };
 
-export default Contact;
+export default Page;
