@@ -14,21 +14,25 @@ export default function Header() {
   // Define menus and submenus
   const menus = [
     {
+      id: 1,
       title: "Who We Serve",
       submenu: [
         {
+          id: 1,
           title: "Linkedin Lead Generation",
           link: "/linkedin-lead-generation",
         },
-        { title: "B2B Lead Generation", link: "/b2b-lead-generation" },
-        { title: "Email Marketing", link: "/email-marketing" },
+        { id: 2, title: "B2B Lead Generation", link: "/b2b-lead-generation" },
+        { id: 3, title: "Email Marketing", link: "/email-marketing" },
         {
+          id: 4,
           title: "Facebook Page Product Review",
           link: "/facebook-product-review",
         },
       ],
     },
     {
+      id: 2,
       title: "Why Us",
       submenu: [
         { title: "Why Data Peak", link: "/why-data-peak" },
@@ -36,10 +40,12 @@ export default function Header() {
       ],
     },
     {
+      id: 3,
       title: "Tools Services",
       link: "#",
     },
     {
+      id: 4,
       title: "Contact Us",
       link: "/contact",
     },
@@ -78,7 +84,7 @@ export default function Header() {
       {/* Desktop Navbar */}
       <nav className="nav-container hidden lg:flex items-center justify-between">
         <Link href="/">
-          <Image src={logo} alt="logo" width={300} height={95} priority />
+          <Image src={logo} alt="logo" width={300} height={75} priority />
         </Link>
         <ul className="flex items-center gap-8 xl:gap-12 mr-3">
           {menus.map((menu, index) => (
@@ -136,8 +142,8 @@ export default function Header() {
             />
 
             <ul className="flex flex-col items-start mt-5 gap-y-5">
-              {menus.map((menu) => (
-                <li key={menu.title} className="text-lg font-medium capitalize">
+              {menus.map((menu, index) => (
+                <li key={index} className="text-lg font-medium capitalize">
                   <div
                     onClick={() => {
                       if (menu.submenu) {
@@ -168,7 +174,7 @@ export default function Header() {
                       }}
                     >
                       {menu.submenu.map((item, index) => (
-                        <>
+                        <div key={index}>
                           <span className="mt-5"></span>
                           <li key={index}>
                             <Link
@@ -179,7 +185,7 @@ export default function Header() {
                               {item.title}
                             </Link>
                           </li>
-                        </>
+                        </div>
                       ))}
                     </ul>
                   )}
