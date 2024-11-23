@@ -16,7 +16,7 @@ const potentials = [
     ),
     title: "Better Sales Opportunities",
     description:
-      "Our lead generation service helps identify and engage with potential customers, expanding your pool of prospects and increasing sales opportunities.",
+      "Our industry-proven expertise assists you in forming an expected & constant sales channel that uplifts your sales opportunities.",
   },
   {
     id: 2,
@@ -32,7 +32,7 @@ const potentials = [
     ),
     title: "Targeted Market Reach",
     description:
-      "Our skilled and seasoned copywriters have a proven track record of crafting cold email copy that gets RESULTS.",
+      "We own a culture of variation & constant development with individual & professional growth to reach the targeted market.",
   },
   {
     id: 3,
@@ -48,7 +48,7 @@ const potentials = [
     ),
     title: "Cost-Effective Marketing",
     description:
-      "You might think that lead generation is pricey, but social media marketing needs bigger budgets, like Facebook Ads or Pinterest Ads. With lead generation, you will have a cost-effective marketing campaign that works",
+      "Our tailored working process will fit your pocket. No matter how difficult your recent market reach out is!",
   },
   {
     id: 4,
@@ -64,7 +64,7 @@ const potentials = [
     ),
     title: "Enhanced Conversion Rates",
     description:
-      "We analyse data from various sources like Google Analytics, social media platforms, and online research to build a strategy that gets qualified leads and improves conversion rates.",
+      "We ensure the highest conversion rates by exploring data from sources like social media platforms, Google Analytics or more.",
   },
 
   {
@@ -81,7 +81,7 @@ const potentials = [
     ),
     title: "Focus On Other Things",
     description:
-      "Our B2B lead generation agency helps streamline the sales process and reduces the time spent finding and nurturing leads, freeing up time for other tasks.",
+      "Efficiency is key; hence, we focus not only on your core business but also on A-to-Z functions.",
   },
   {
     id: 6,
@@ -97,7 +97,7 @@ const potentials = [
     ),
     title: "All-In-One Agency",
     description:
-      "We're not like any other lead generation agencies out there because we're also part of a bigger digital marketing agency called Pearl Lemon Group",
+      "We're your one-stop, exclusive solution for brand progress and customer service. We’re with you 24/7/365.",
   },
 ];
 
@@ -123,18 +123,13 @@ const MaximitePotential = async () => {
           <h2
             className={`${didact_gothic.className} text-[25px] sm:text-3xl font-semibold leading-8 mb-3 sm:leading-10 w-[97%] xl:80%`}
           >
-            Maximise Your Business Potential With Our Lead Generation Agency In
-            The UK
+            Pick the best & get the best- “DATA PEAK” ranks #1 with the highest
+            lead generation capability worldwide.
           </h2>
           <p className="default-text-style">
-            Lead generation is crucial to business growth and development. By
-            identifying and engaging with high-quality leads, businesses can
-            expand their reach, increase sales opportunities, and improve
-            conversion rates.
-          </p>
-          <p className="default-text-style">
-            Take a look at some of the most prominent benefits of our lead
-            generation potentials here.
+            Level up your brand with us. Expand your business reach by enhancing
+            the sales curve; we're ready to engage your business with excellent
+            leads. Let’s explore the potential benefit of working with our team.
           </p>
         </div>
 

@@ -11,7 +11,7 @@ import WhatsAppButton from "../components/WhatsAppButton";
 
 const Home = async () => {
   const phoneNumber = "+8801704262772";
-  const message = "Hello Pearl Lemon Leads!";
+  const message = "Hello Data Peak Leads!";
   return (
     <>
       <div className="h-[102px] lg:h-[95px]"></div>

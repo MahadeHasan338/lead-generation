@@ -20,8 +20,8 @@ const Curves = async () => {
         <h2
           className={`${didact_gothic.className} text-[25px] sm:text-3xl font-semibold leading-8 sm:leading-10 w-[97%] lg:w-10/12 xl:w-9/12`}
         >
-          Watch Us COLD CALL Live And See How We Book Appointments Like
-          Clockwork
+          “DATA PEAK LEADS GENERATION” delegates accurate & prompt solutions for
+          real value leads generation.
         </h2>
       </div>
       <div className="custom-shape-divider-bottom-1708621578">

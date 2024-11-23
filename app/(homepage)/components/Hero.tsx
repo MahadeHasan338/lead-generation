@@ -11,19 +11,21 @@ const Hero = async () => {
           className={`${didact_gothic.className} flex flex-col space-y-5 xl:space-y-8 mt-5 md:mt-10 xl:mt-20 `}
         >
           <h1 className="hidden xl:block text-[70px] font-normal leading-[85px] ">
-            We&apos;ll <span className="font-bold">Book</span> You 20
-            <br /> Calls In <span className="font-bold">30 Days</span>
+            We&apos;re your ultimate
+            <br />
+            <span className="font-bold">growth partner!</span>
           </h1>
 
           <h1 className="xl:hidden text-[40px] md:text-[50px] md:px-5 lg:px-0 font-normal leading-[60px]">
-            We&apos;ll <span className="font-bold">Book</span> You 20 Calls In
-            <span className="font-bold"> 30 Days</span>
+            We&apos;re your ultimate
+            <span className="font-bold">growth partner!</span>
           </h1>
           <h3 className="text-xl font-semibold">
-            <span className="font-black">Award-Winning BD</span> Lead Generation
-            Agency In London.
+            Boost up the level of your leads with DATA PEAK
           </h3>
-          <h3 className="text-xl font-semibold">(Just Give Us 6 Months)</h3>
+          <h3 className="text-xl font-semibold">
+            (No-1 leads generation platform)
+          </h3>
           <div className="inline-block">
             <Link href="/contact">
               <button className="button-primary">Contact Us!</button>

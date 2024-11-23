@@ -4,38 +4,38 @@ const testimonials = [
   {
     id: 1,
     message:
-      "Lead Generation is what we do. We live and breathe to generate leads. Connecting people is in our blood. We are a full-service UK lead gen agency ready to go to work for you!",
-    name: "Vijay",
+      "Very satisfied with DATA PEAK Leads Gen, their email marketing experience & talent give us a seamless experience. This is a powerful platform with a speedy & responsive working process. Overall, they’re a full-service leads gen platform ready to serve the best.",
+    name: "Christine Mulvey",
   },
   {
     id: 2,
     message:
-      "Pearl Lemon are our current advisors as to the growth of Willyard Staffing and Consulting and we are 2.5 months into working with them and are also part of their private Facebook members group. The practicality of their Lead Generation advice and also implementation so far has been superb!",
-    name: "Becky Willyard",
+      "Awesome service. Mind-blowing consumer service. Their working system touched me highly. I appreciate their LinkedIn Lead Generation service. I especially thanked the organizer of this platform. His team organizes a system & working steps appreciable.",
+    name: "Tomas Edison",
   },
   {
     id: 3,
     message:
-      "Pearl Lemon have are two months into working with pixel art on our lead generation funnel and I’m really pleased to say that so far we’ve been able to close several new deals as a consequence of our work together – thanks so much guys really happy so far!",
-    name: "Zuka",
+      "Definitely, I’ll join “DATA PEAK” in my next project. This team is awesome, especially a great job offers for B2B Lead Generation.",
+    name: "Rudolf-G",
   },
   {
     id: 4,
     message:
-      "I'm so thankful for the results I got from Pearl Lemon. We hired Deepak Shukla and its team for b2b lead generation services and SEO services for our websites, and within 6-7 months we doubled our growth. If you are looking for an SEO company in London or UK, this is the agency for you.",
-    name: "Tom A",
+      "I suggest everyone do business with “Shahriar”. Seamless corporation. They are very responsive, skilled & overqualified. My Facebook page product review is done in a given time frame & as per demand.",
+    name: "Chris Dylan",
   },
   {
     id: 5,
     message:
-      "Deepak and Pearl Lemon gave me the tools to boost my presence on LinkedIn which has led to organic and valuable interactions and ultimately potential and actual business. They have always gone above and beyond, couldn’t recommend them enough!",
-    name: "Aarish Shah",
+      "“DATA PEAK” is an exclusive Lead Generation vendors, I was surprised with the total service package. All of my demands were delivered on time, in a 100% reliable and authentic way.",
+    name: "Eric Denly",
   },
   {
     id: 6,
     message:
-      "Working with Deepak and PLL has been nothing short of plain sailing – I’ve known the team there for several years and they’ve been able to pass me work time and time again – highly recommend them for lead generation – I’m in web development!",
-    name: "Billy Mushet",
+      "The crucial parts of a successful business are best value-quality service-responsibility. Shahriar- a real organizer constantly delivering great with our publishing company with zero quality compromise.",
+    name: "Jon R. Morn",
   },
 ];
 
@@ -47,7 +47,7 @@ const Testimonials = async () => {
           <h2
             className={`${didact_gothic.className} text-[25px] sm:text-3xl font-semibold leading-8 sm:leading-10 w-[97%] xl:80%`}
           >
-            What They Say About Us
+            Our client's words, our inspiration.
           </h2>
         </div>
 

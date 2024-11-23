@@ -16,7 +16,7 @@ const services = [
     ),
     title: "Linkedin Lead Generation",
     description:
-      "We’ll help you leverage the power of LinkedIn to generate new, highly qualified leads and make valuable connections.",
+      "We assure you that you will serve more powerful & quality leads with our LinkedIn Lead Generation service, promote your brand, making your success journey easier.",
     link: "/linkedin-lead-generation",
   },
   {
@@ -33,7 +33,7 @@ const services = [
     ),
     title: "B2B Lead Generation",
     description:
-      "We’ll fill your sales funnel with a steady stream of qualified leads to keep your sales team busy!",
+      "We'll shortlist your product's best possible buyers and apply stunning Sales and marketing strategies to draw the target audience's interest and fill your sales funnel.",
     link: "/b2b-lead-generation",
   },
   {
@@ -50,7 +50,7 @@ const services = [
     ),
     title: "Email Marketing",
     description:
-      "Forget the script! Our team focusses on building genuine, viable relationships via targeted cold calling.",
+      "We present you with all-exclusive email marketing services designed to best suit your brand demands, marketing strategies, and pocket.",
     link: "/email-marketing",
   },
   {
@@ -67,7 +67,7 @@ const services = [
     ),
     title: "Facebook Page Product Review",
     description:
-      "We’ll work seamlessly with your sales team to take away the arduous task of lead generation so they can focus on conversions.",
+      "We offer the best Facebook page product review supported with authentic & relevant information; with 100% safe & free consumer support.",
     link: "/facebook-product-review",
   },
 ];
@@ -76,19 +76,18 @@ const Services = async () => {
   return (
     <div className="bg-service-bg bg-[left_top_2rem] xl:bg-[left_top_4rem] bg-no-repeat bg-service-size">
       <div className="default-container text-center w-full h-full pt-16 pb-5 xl:py-28">
-        <div className="flex flex-col space-y-6 mb-16">
+        <div className="flex flex-col items-center xl:m-20 2xl:mx-40 space-y-6 mb-16">
           <h2
             className={`${didact_gothic.className} text-[25px] sm:text-3xl font-semibold leading-8 sm:leading-10 w-[97%] xl:80%`}
           >
-            Accelerate Your Business Growth With Our Proven Lead Generation
-            Services
+            Crush your sales bit with our customized & result-oriented leads gen
+            campaigning approach.
           </h2>
           <p className="default-text-style">
-            Lead Generation is what we do. We live and breathe to generate
-            leads. Connecting people is in our blood. We are a
+            Our lead generation service creates the highest profit by presenting
+            a unique set of
             <span className="font-bold">
-              {" "}
-              full-service UK lead gen agency ready to go to work for you!
+              inbound and outbound services with enhanced operational agility.
             </span>
           </p>
         </div>

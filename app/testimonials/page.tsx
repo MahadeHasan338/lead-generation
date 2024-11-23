@@ -12,25 +12,25 @@ const testimonials = [
   {
     id: 2,
     message:
-      "Pearl Lemon are our current advisors as to the growth of Willyard Staffing and Consulting and we are 2.5 months into working with them and are also part of their private Facebook members group. The practicality of their Lead Generation advice and also implementation so far has been superb!",
+      "Data Peak are our current advisors as to the growth of Willyard Staffing and Consulting and we are 2.5 months into working with them and are also part of their private Facebook members group. The practicality of their Lead Generation advice and also implementation so far has been superb!",
     name: "Becky Willyard",
   },
   {
     id: 3,
     message:
-      "Pearl Lemon have are two months into working with pixel art on our lead generation funnel and I’m really pleased to say that so far we’ve been able to close several new deals as a consequence of our work together – thanks so much guys really happy so far!",
+      "Data Peak have are two months into working with pixel art on our lead generation funnel and I’m really pleased to say that so far we’ve been able to close several new deals as a consequence of our work together – thanks so much guys really happy so far!",
     name: "Zuka",
   },
   {
     id: 4,
     message:
-      "I'm so thankful for the results I got from Pearl Lemon. We hired Deepak Shukla and its team for b2b lead generation services and SEO services for our websites, and within 6-7 months we doubled our growth. If you are looking for an SEO company in London or UK, this is the agency for you.",
+      "I'm so thankful for the results I got from Data Peak. We hired Deepak Shukla and its team for b2b lead generation services and SEO services for our websites, and within 6-7 months we doubled our growth. If you are looking for an SEO company in London or UK, this is the agency for you.",
     name: "Tom A",
   },
   {
     id: 5,
     message:
-      "Deepak and Pearl Lemon gave me the tools to boost my presence on LinkedIn which has led to organic and valuable interactions and ultimately potential and actual business. They have always gone above and beyond, couldn’t recommend them enough!",
+      "Deepak and Data Peak gave me the tools to boost my presence on LinkedIn which has led to organic and valuable interactions and ultimately potential and actual business. They have always gone above and beyond, couldn’t recommend them enough!",
     name: "Aarish Shah",
   },
   {

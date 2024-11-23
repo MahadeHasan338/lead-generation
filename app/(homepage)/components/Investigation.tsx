@@ -34,21 +34,28 @@ const Investigation = async () => {
               <h2
                 className={`${didact_gothic.className} text-[25px] sm:text-3xl font-semibold leading-8 sm:leading-10`}
               >
-                Investing In Our Lead Generation Agency In London Is The Right
-                Thing To Do
+                Dedicated Leading Solution to your brand. Just one call gets
+                connected with us.
               </h2>
               <p className="default-text-style py-[15px]">
-                Investing in a lead generation agency can be a game-changer for
-                businesses looking to grow and succeed. You might have tried
-                Google Ads at some point, but maybe it just didn’t work out for
-                you.
+                Our upskilled & highly motivated team is serving creative &
+                stunning solutions for all sorts of business organizations.
               </p>
               <p className="default-text-style pb-[15px]">
-                Our lead generation agency in London offers a range of services
-                designed to help businesses reach their full potential. Whether
-                you’re looking to increase sales, acquire new customers, or
-                improve your marketing strategies, we have the expertise and
-                resources to help you achieve your goals.
+                We apply proven & qualified tools & techniques to boost our team
+                member’s skill sets and ensure you offer the best-in-class
+                solutions.
+              </p>
+              <p className="default-text-style pb-[15px]">
+                We maintain the perfect balance of flexibility & framework to
+                avoid hassle for deadline maintenance. We're always on time.
+              </p>
+              <p className="default-text-style pb-[15px]">
+                Our fully integrated team balances perfect cooperation from our
+                team organizer to group members. Everyone is friendly and
+                mutual. We apply a result-oriented approach, straightforward
+                communication, and advanced methodology to achieve the best
+                outcome.
               </p>
             </div>
           </div>
@@ -81,21 +88,24 @@ const Investigation = async () => {
               <h2
                 className={`${didact_gothic.className} text-[25px] sm:text-3xl font-semibold leading-8 sm:leading-10`}
               >
-                Investing In Our Lead Generation Agency In London Is The Right
-                Thing To Do
+                We’re DATA PEAK LEADS GENERATION- A Global platform.
               </h2>
               <p className="default-text-style py-[15px]">
-                Investing in a lead generation agency can be a game-changer for
-                businesses looking to grow and succeed. You might have tried
-                Google Ads at some point, but maybe it just didn’t work out for
-                you.
+                Open up your business possibilities Beyond Borders
               </p>
               <p className="default-text-style pb-[15px]">
-                Our lead generation agency in London offers a range of services
-                designed to help businesses reach their full potential. Whether
-                you’re looking to increase sales, acquire new customers, or
-                improve your marketing strategies, we have the expertise and
-                resources to help you achieve your goals.
+                No worries, You’re in upstanding company. We’re grateful & proud
+                to be an integral part of thousands of salespeople doing
+                significant companies worldwide.
+              </p>
+              <p className="default-text-style pb-[15px]">
+                Our lead generation services reach out all around the world,
+                dreaming of creating a global firm. Regardless of your broader
+                region, we’ll boost your lead to delegate your business growth.
+              </p>
+              <p className="default-text-style pb-[15px]">
+                Hence, let’s discover your new horizons with our customized
+                solutions to enjoy your spontaneous outreach.
               </p>
             </div>
           </div>
@@ -128,21 +138,23 @@ const Investigation = async () => {
               <h2
                 className={`${didact_gothic.className} text-[25px] sm:text-3xl font-semibold leading-8 sm:leading-10`}
               >
-                Investing In Our Lead Generation Agency In London Is The Right
-                Thing To Do
+                Your most trusted One-Stop Window-Shop. All-exclusive lead gen
+                services merge here to ensure your Business Development-
               </h2>
               <p className="default-text-style py-[15px]">
-                Investing in a lead generation agency can be a game-changer for
-                businesses looking to grow and succeed. You might have tried
-                Google Ads at some point, but maybe it just didn’t work out for
-                you.
+                It is our robust faith that our tailored systems and approach
+                must create & add powerful value to our customers.
               </p>
               <p className="default-text-style pb-[15px]">
-                Our lead generation agency in London offers a range of services
-                designed to help businesses reach their full potential. Whether
-                you’re looking to increase sales, acquire new customers, or
-                improve your marketing strategies, we have the expertise and
-                resources to help you achieve your goals.
+                Whatever your brand needs LinkedIn or B2B Lead Generation, Email
+                marketing or Facebook product review our upskilled professionals
+                establish spontaneous combinations with our clients, promoting
+                extensive & fruitful partnerships.
+              </p>
+              <p className="default-text-style pb-[15px]">
+                Obviously, you’ll get best-practice solutions to raise your
+                brand quality with 100% authenticity, loyalty & satisfaction.
+                Join us to explore how we grow your brand revenue.
               </p>
             </div>
           </div>
@@ -175,21 +187,24 @@ const Investigation = async () => {
               <h2
                 className={`${didact_gothic.className} text-[25px] sm:text-3xl font-semibold leading-8 sm:leading-10`}
               >
-                Investing In Our Lead Generation Agency In London Is The Right
-                Thing To Do
+                Unleashing top performance with DATA PEAK. Comprehensive
+                industrial success is waving to boost your sales Pipeline.
               </h2>
               <p className="default-text-style py-[15px]">
-                Investing in a lead generation agency can be a game-changer for
-                businesses looking to grow and succeed. You might have tried
-                Google Ads at some point, but maybe it just didn’t work out for
-                you.
+                We concern sales pipeline forming as a precise science rather
+                than an art. At “DATA PEAK” our valued consumers tack
+                progressive solutions with our proven approach.
               </p>
               <p className="default-text-style pb-[15px]">
-                Our lead generation agency in London offers a range of services
-                designed to help businesses reach their full potential. Whether
-                you’re looking to increase sales, acquire new customers, or
-                improve your marketing strategies, we have the expertise and
-                resources to help you achieve your goals.
+                With tools service like Apollo bulky lead & LinkedIn sales
+                navigator premium subscription, we’re proudly reaching thousands
+                of clients with maximum adaptability & efficiency.
+              </p>
+              <p className="default-text-style pb-[15px]">
+                While you are concerned about enhancing your marketing plan, our
+                marketing advisors 24/7 ready to navigate your business. Trust
+                us; we're an authentic leads gen platform with smart &
+                up-to-date innovation.
               </p>
             </div>
           </div>

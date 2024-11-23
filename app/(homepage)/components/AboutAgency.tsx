@@ -30,30 +30,31 @@ const AboutAgency = async () => {
             <h2
               className={`${didact_gothic.className} text-[25px] sm:text-3xl font-semibold leading-8 sm:leading-10`}
             >
-              The Lead Generation Agency That Transforms Businesses With Quality
-              Leads That Convert
+              Ever-growing lead generation with 15 years of Experience.
             </h2>
             <p className="default-text-style py-[15px]">
-              Lead Generation is what we do. We live and breathe to generate
-              leads. Connecting people is in our blood. We are a full-service UK
-              lead gen agency ready to go to work for you!
+              We’re presenting a perfect blend of skill tools & strategies-
             </p>
             <p className="default-text-style italic pb-[15px]">
-              Want to maximise your reach?
+              Hit your absolute customers with “DATA PEAK LEADS GENERATION”, the
+              worlds largest professional network. We’ve been supporting your
+              business Since 2010.
             </p>
             <p className="default-text-style italic pb-[15px]">
-              Need to convert more prospects?
+              We assist you in engaging with new consumers and boosting your
+              market reach. We create spontaneous day-to-day operations with our
+              top-class virtual & technical support services so you may pivot
+              your main business.
             </p>
             <p className="default-text-style italic pb-[15px]">
-              Badly want to drive growth?
+              “DATA PEAK” applies the outstanding lead gen approach to build a
+              strong lead with a wide range of services and mastermind
+              expertise.
             </p>
             <p className="default-text-style pb-10">
-              We’re the lead generation agency you’re looking for. Unlike other
-              lead generation companies in London, we have a unique approach to
-              lead gen. We build relationships with your leads, offer a wide
-              range of services, and have highly experienced professionals who
-              are not just lead-generating experts but also digital marketers
-              and sales mentors.
+              Our experienced team rates & turns revenue-generating leads into
+              satisfied clients, which relates to an enhanced sales pipeline &
+              clarity in all spheres.
             </p>
             <Link href="/contact">
               <button className="button-primary">Contact Us</button>

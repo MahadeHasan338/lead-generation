@@ -117,7 +117,7 @@ const Page = () => {
     <>
       <div className="pt-[102px] lg:pt-[95px]"></div>
       <HalfMoonCurve
-        headingBold="Why Pearl Lemon Leads"
+        headingBold="Why Data Peak Leads"
         heading="Vs Other Agencies"
         subHeading="Is Your Sales Team Hungry For More Qualified Leads? Let’s Chat!"
         showOnMobile={false}
@@ -128,7 +128,7 @@ const Page = () => {
           <thead className="bg-black text-white">
             <tr className="text-center">
               <th className="table-header">Expertise</th>
-              <th className="table-header">Pearl Lemon Leads</th>
+              <th className="table-header">Data Peak Leads</th>
               <th className="table-header">Other Agencies</th>
               <th className="table-header">Inhouse</th>
             </tr>

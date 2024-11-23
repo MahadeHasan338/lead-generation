@@ -159,7 +159,7 @@ export default function Header() {
                     >
                       <span>{menu.title}</span>
                       {menu.submenu && menu.submenu.length > 0 && (
-                        <FaAngleDown className="mt-[5px] text-md" />
+                        <FaAngleDown className="mt-[2px] text-md" />
                       )}
                     </Link>
                   </div>

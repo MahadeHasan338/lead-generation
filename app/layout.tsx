@@ -11,7 +11,7 @@ interface RootLayoutProps {
 }
 
 export const metadata: Metadata = {
-  title: "Pearl Lemon Leads",
+  title: "Data Peak",
   description: "Lead generation based website",
 };
 

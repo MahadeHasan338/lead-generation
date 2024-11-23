@@ -16,31 +16,27 @@ const Qualification = async () => {
               <h2
                 className={`${didact_gothic.className} text-[25px] sm:text-3xl font-semibold leading-8 sm:leading-10`}
               >
-                Investing In Our Lead Generation Agency In London Is The Right
-                Thing To Do
+                Enclose more deals-greater lead management twitch here.
               </h2>
               <p className="default-text-style py-[15px]">
-                Failure to generate a consistent stream of qualified leads is
-                the #1 reason small businesses struggle to scale up.
+                Let's set up more conversations and reach out to multi-channel
+                outbound action.
               </p>
               <p className="default-text-style pb-[15px]">
-                When you outsource your B2B lead generation to us, we will take
-                away the task of creating interest and generating leads from
-                your sales team so they can do, what they do best, convert leads
-                into sales.
+                Directly we create leads from a LinkedIn search or any LinkedIn
+                profile. We go with LinkedIn Basic or Sales Navigator. In the
+                case of email marketing our robust algorithm will reach lost
+                email addresses generating leads automatically.
               </p>
               <p className="default-text-style pb-[15px]">
-                It’s time to move on from spending countless hours and resources
-                on strategies that only give you disappointing results. And if
-                you’re looking for a more effective and efficient way to
-                generate leads, our lead generation company is the answer.
+                Google Chrome extension (you can change it) is our main browser
+                for online lead origination. We realize your brand is
+                extraordinary, so we permit you to choose a customized business
+                field overlap.
               </p>
               <p className="default-text-style mb-12">
-                Lead generation is one of our specialities, and our team of
-                experts has the knowledge and expertise needed to assist you. To
-                help businesses generate high-quality leads and reach their
-                target audiences, we use proven strategies and cutting-edge
-                technology.
+                Our B2B lead gen & FB page product review also create leads by
+                applying a dynamic, innovative approach.
               </p>
 
               <button className="button-primary !bg-[#59BA41] !text-white">

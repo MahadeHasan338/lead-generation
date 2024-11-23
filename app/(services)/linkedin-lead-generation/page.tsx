@@ -292,7 +292,7 @@ const Page = async () => {
               </h2>
               <p className="default-text-style py-[15px]">
                 LinkedIn Lead Generation has played a HUGE part in building up
-                The Pearl Lemon Group (PLG)! We were featured in this SEMrush
+                The Data Peak Group (PLG)! We were featured in this SEMrush
                 article in which Deepak Shukla explains how he generated $18,000
                 worth of proposals using LinkedIn within 3 months. We’ve also
                 shared our thoughts on LinkedIn articles on the LinkedInformed

@@ -16,25 +16,27 @@ const AboutMe = async () => {
               <h2
                 className={`${didact_gothic.className} text-[25px] sm:text-3xl font-semibold leading-8 sm:leading-10`}
               >
-                Meet Deepak
+                Shahriar Sarker
               </h2>
               <h3 className="text-xl font-semibold py-7">
-                Lead Generation Expert And Founder Of Pearl Lemon Leads
+                Pioneer of DATA PEAK Leads & the mastermind of Lead Generation
               </h3>
               <p className="default-text-style pb-5">
-                Hey! Thanks for stopping by! If it’s your first time here,
-                welcome! You’ve landed on our site because you need a steady
-                stream of qualified leads to{" "}
+                Hey! Welcome “DATA PEAK, ” the best platform on which to get
+                dependable outcomes. I heartily believe our team is qualified
+                enough to present the best possible Leads for all sorts of
+                brands & businesses.
                 <span className="font-bold">GROW your business</span>.
               </p>
               <p className="default-text-style pb-5">
-                Well, you’ve come to the right place! Browse our video case
-                studies, client testimonials and verified reviews, then let’s
-                have a Discovery Call – 10 minutes where we can discuss what’s
-                on your mind.
+                Get ready to make a window-shop our verified reviews, client
+                testimonials or case studies. Let us know your mind & enjoy the
+                best support to gain qualified leads.
               </p>
               <p className="default-text-style pb-10">
-                Speak to you soon! Deepak
+                Well, you’ve come to the right place! Browse our video, and then
+                let’s have a 10–minute Discovery Call to discuss what’s on your
+                mind.
               </p>
               <Link href="/contact">
                 <button className="button-primary">Contact Us</button>

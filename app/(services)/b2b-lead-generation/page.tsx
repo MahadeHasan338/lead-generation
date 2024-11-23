@@ -47,7 +47,7 @@ const B2BLeadGeneration = async () => {
       <HalfMoonCurve
         headingBold="B2B"
         heading="Lead Generation Agency"
-        subHeading="Replenish Your Sales Funnel With Pearl Lemon Lead’s B2B Lead Generation"
+        subHeading="Replenish Your Sales Funnel With Data Peak Lead’s B2B Lead Generation"
       />
 
       {/* video container */}
@@ -71,7 +71,7 @@ const B2BLeadGeneration = async () => {
           <div className="order-1 xl:order-2 basis-1/2 text-center xl:text-left">
             <p className="default-text-style py-[15px]">
               Once you’ve outsourced your B2B lead generation to our experienced
-              team here at Pearl Lemon Leads, we will perform several activities
+              team here at Data Peak Leads, we will perform several activities
               to increase your brand awareness and boost your online presence,
               resulting in more qualified leads, calls and meetings.
             </p>
@@ -123,12 +123,12 @@ const B2BLeadGeneration = async () => {
                 Our Solution
               </p>
               <p className="default-text-style pb-[15px]">
-                B2B lead generation from Pearl Lemon Leads. As a leading B2B
-                lead gen agency, Pearl Lemon Leads powers lead generation
-                campaigns for B2B organizations in every niche and of all sizes.
-                Our marketing strategies capture the attention of prospects,
-                improves brand visibility, educates buyers, and converts
-                prospects to paying customers.
+                B2B lead generation from Data Peak Leads. As a leading B2B lead
+                gen agency, Data Peak Leads powers lead generation campaigns for
+                B2B organizations in every niche and of all sizes. Our marketing
+                strategies capture the attention of prospects, improves brand
+                visibility, educates buyers, and converts prospects to paying
+                customers.
               </p>
             </div>
           </div>

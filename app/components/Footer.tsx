@@ -25,7 +25,7 @@ export default function Footer() {
       <div className="bg-black">
         <div className="default-container py-10 md:py-20 grid grid-cols-1 space-y-10 md:grid-cols-3 md:gap-x-10 md:space-y-0">
           <div className="flex flex-col space-y-4 text-white">
-            <Link href="#aboutAgency">Why Pearl Lemon Leads</Link>
+            <Link href="#aboutAgency">Why Data Peak Leads</Link>
             <Link href="#testimonial">Client Testimonials</Link>
             <Link href="/contact">Contact Us</Link>
           </div>
@@ -43,7 +43,7 @@ export default function Footer() {
           <div className="flex flex-col space-y-4 text-white md:justify-self-end">
             <p className="font-semibold">Company Address:</p>
             <div>
-              <p className="mb-1">Pearl Lemon Leads Ltd.</p>
+              <p className="mb-1">Data Peak Leads Ltd.</p>
               <p>International House,</p>
             </div>
             <div>
