@@ -48,7 +48,8 @@ const Investigation = async () => {
               </p>
               <p className="default-text-style pb-[15px]">
                 We maintain the perfect balance of flexibility & framework to
-                avoid hassle for deadline maintenance. We're always on time.
+                avoid hassle for deadline maintenance. We&apos;re always on
+                time.
               </p>
               <p className="default-text-style pb-[15px]">
                 Our fully integrated team balances perfect cooperation from our
@@ -203,7 +204,7 @@ const Investigation = async () => {
               <p className="default-text-style pb-[15px]">
                 While you are concerned about enhancing your marketing plan, our
                 marketing advisors 24/7 ready to navigate your business. Trust
-                us; we're an authentic leads gen platform with smart &
+                us; we&apos;re an authentic leads gen platform with smart &
                 up-to-date innovation.
               </p>
             </div>

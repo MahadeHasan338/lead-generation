@@ -47,7 +47,7 @@ const Testimonials = async () => {
           <h2
             className={`${didact_gothic.className} text-[25px] sm:text-3xl font-semibold leading-8 sm:leading-10 w-[97%] xl:80%`}
           >
-            Our client's words, our inspiration.
+            Our client&apos;s words, our inspiration.
           </h2>
         </div>
 

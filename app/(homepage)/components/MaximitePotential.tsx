@@ -128,8 +128,9 @@ const MaximitePotential = async () => {
           </h2>
           <p className="default-text-style">
             Level up your brand with us. Expand your business reach by enhancing
-            the sales curve; we're ready to engage your business with excellent
-            leads. Let’s explore the potential benefit of working with our team.
+            the sales curve; we&apos;re ready to engage your business with
+            excellent leads. Let’s explore the potential benefit of working with
+            our team.
           </p>
         </div>
 

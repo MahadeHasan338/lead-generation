@@ -19,8 +19,8 @@ const Qualification = async () => {
                 Enclose more deals-greater lead management twitch here.
               </h2>
               <p className="default-text-style py-[15px]">
-                Let's set up more conversations and reach out to multi-channel
-                outbound action.
+                Let&apos;s set up more conversations and reach out to
+                multi-channel outbound action.
               </p>
               <p className="default-text-style pb-[15px]">
                 Directly we create leads from a LinkedIn search or any LinkedIn
