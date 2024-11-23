@@ -10,7 +10,7 @@ const config: Config = {
     extend: {
       backgroundImage: {
         "service-bg": "url('/back-min.png')",
-        "about-bg": "url('/deepak.png')",
+        "about-bg": "url('/shahriar.png')",
         "testimonial-bg": "url('/testimonials.webp')",
       },
       backgroundSize: {
