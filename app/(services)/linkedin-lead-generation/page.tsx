@@ -1,11 +1,11 @@
-import { didact_gothic } from "@/app/fonts";
 import Cards from "@/app/components/Cards";
-import HalfMoonCurve from "../../components/HalfMoonCurve";
+import { didact_gothic } from "@/app/fonts";
 import img1 from "@/public/leads/1.png";
 import img2 from "@/public/leads/2.png";
 import img3 from "@/public/leads/3.png";
 import img4 from "@/public/leads/4.png";
 import Image from "next/image";
+import HalfMoonCurve from "../../components/HalfMoonCurve";
 
 const services = [
   {
@@ -22,7 +22,7 @@ const services = [
     ),
     title: "Network Expansion",
     description:
-      "We will connect you with more of your target audience, industry influencers and referral partners.",
+      "We explore & create authentic bonding with targeted & potential audiences to open up new opportunities for you.",
   },
   {
     id: 2,
@@ -38,7 +38,7 @@ const services = [
     ),
     title: "Engaging Content",
     description:
-      "We will ensure that valuable content is consistently shared with your target market.",
+      "We emphasize elements like articles, stories, posts, metaphors, examples, or visuals to make your LinkedIn content more engaging.",
   },
   {
     id: 3,
@@ -54,7 +54,7 @@ const services = [
     ),
     title: "Profile Optimisation",
     description:
-      "We’ll ensure that your key employees have a strong, conversion-focused Linkedin profile.",
+      "Exposing your pro-journey in the best light. We’ll perfectly play up your experience and expertise to attract potential leads.",
   },
 ];
 
@@ -65,7 +65,7 @@ const Page = async () => {
       <HalfMoonCurve
         headingBold="LinkedIn"
         heading="Lead Generation"
-        subHeading="Reach Out To 600 Qualified Prospects Per MONTH With Our Linkedin Lead Generation Services"
+        subHeading="Rank up your LinkedIn leads to drive the best possible revenue with our LinkedIn Lead Generation Services, which are 100% done for you."
         showOnMobile={false}
       />
 
@@ -89,18 +89,17 @@ const Page = async () => {
 
           <div className="order-1 xl:order-2 basis-1/2 text-center xl:text-left">
             <p className="default-text-style py-[15px]">
-              LinkedIn is a thriving platform filled with regular users — 500
-              million+ of them. That’s a HUGE source of high-quality leads
-              waiting to be nurtured.
+              LinkedIn Lead Generation- the best practice to enhance your
+              business growth. No concern. If your Personal Networking or Google
+              Ads Campaigns aren@apos;t also working, it’s high time to amplify
+              LinkedIn Lead Generation. This blooming networking platform has
+              500 million+ active profiles and an extensive possibility of
+              premium leads to engage.
             </p>
             <p className="default-text-style pb-[15px]">
-              As one of the leading LinkedIn Lead Generation companies in the
-              UK, we’ll capture those leads, for you to turn into new sources of
-              business and revenue.
-            </p>
-            <p className="default-text-style pb-[15px]">
-              Alternatively, drop me a line in social media below and I’ll get
-              back to you ASAP!
+              ALet’s talk with DATA PEAK, your most reliable LinkedIn Marketing
+              Partner. We will catch you with attractive, high-value, new or
+              targeted leads weekly.
             </p>
           </div>
         </div>
@@ -113,14 +112,16 @@ const Page = async () => {
             <h2
               className={`${didact_gothic.className} text-[25px] sm:text-3xl font-semibold leading-8 sm:leading-10 w-[97%] xl:80%`}
             >
-              Our LinkedIn Lead Generation Services
+              Our effective LinkedIn Lead Generation services to grow your
+              network.
             </h2>
             <p className="default-text-style">
-              We help amazing companies to <strong>attract</strong> more of
-              their ideal clients using LinkedIn. Our B2B Lead Generation
-              service has been carefully designed to build your online presence
-              whilst also accurately reflecting your brand and positioning you
-              as a trusted leader in your industry.
+              We are proficient in nurturing high-quality & valued leads from
+              high-profile clients participating in LinkedIn. Our strong
+              leads-capturing capability in this thriving platform will bring
+              amazing magic to your business & revenue. Let’s discover our
+              services perfectly sketched to make your brand online identity
+              strong in your industry.
             </p>
           </div>
 
@@ -155,19 +156,17 @@ const Page = async () => {
               <h2
                 className={`${didact_gothic.className} text-[25px] sm:text-3xl font-semibold leading-8 sm:leading-10`}
               >
-                We Are A B2B Lead Generation Company
+                10X your LinkedIn leads up to 11! in the Greater United States-
               </h2>
               <p className="default-text-style py-[15px]">
-                Every day, people are doing real business on LinkedIn. Whilst
-                many companies have a presence on LinkedIn, they are not
-                leveraging the full potential of the powerful platform.
-              </p>
-              <p className="default-text-style pb-[15px]">
-                It’s not just about forming connections – it’s about building
-                viable relationships, and closing deals that are mutually
-                beneficial. Our Linkedin lead generation experts can help you
-                ensure you are connecting with and talking to your ideal
-                prospects.
+                DATA PEAK commands straight access to over 550+ Million LinkedIn
+                contacts around the Greater USA. Our enhanced LinkedIn Lead
+                Generation drives will boost your LinkedIn sales outreach,
+                efficiency, and outcomes. Your targeted decision-makers will
+                engage in a conversation, leading to responses from your actual
+                buyers, resulting in qualified leads. It’s time to discover a
+                dedicated LinkedIn SDR’s intensity at a reasonable cost to
+                leverage the complete possibilities of this powerful platform.
               </p>
             </div>
           </div>
@@ -200,16 +199,17 @@ const Page = async () => {
               <h2
                 className={`${didact_gothic.className} text-[25px] sm:text-3xl font-semibold leading-8 sm:leading-10`}
               >
-                Multi-Channel Lead Generation Approach
+                Unleash the power of our multi-channel lead generation approach.
               </h2>
               <p className="default-text-style py-[15px]">
-                As a full-service lead generation agency, we are able to tailor
-                our LinkedIn Lead generation services to your business goals.
+                As the No. 1 LinkedIn Lead Generation & full-service provider
+                company in the USA, we’ll detain high-profile & valued leads to
+                create new sources of your business and revenue.
               </p>
               <p className="default-text-style pb-[15px]">
-                This may involve us integrating our cold calling, cold email and
-                appointment setting offering with our LinkedIn lead generation
-                services to deliver maximum value.
+                Our outbound B2B campaigns, integrated with cold email, cold
+                calling, network expansion, and other LinkedIn lead generation
+                approaches, will boost leads and value.
               </p>
             </div>
           </div>
@@ -242,19 +242,21 @@ const Page = async () => {
               <h2
                 className={`${didact_gothic.className} text-[25px] sm:text-3xl font-semibold leading-8 sm:leading-10`}
               >
-                We Practice What We Preach
+                LinkedIn Leads the Pack in US Lead Generation- How we cover?
               </h2>
               <p className="default-text-style py-[15px]">
-                Every day we reach out to over 500 people on LinkedIn to
-                generate actual leads with high conversion rates. Our bespoke
-                Lead Generation strategy of combining cold emailing, messaging,
-                appointment setting and many more provide results which you
-                signed up for!
+                Our specialists possess a strong command of current US market
+                trends that match your LinkedIn strategy. Our Lead Gen
+                masterminds apply our automated LinkedIn outreach software &
+                LinkedIn Sales Navigator to grip your expectations in a
+                conversation.
               </p>
               <p className="default-text-style pb-[15px]">
-                We don’t commit to performing to the bare minimum but go the
-                extra mile, which makes us stand apart from all other lead
-                generation service providers.
+                DATA PEAK professional covers content like ad templates, sales
+                scripts, messaging scripts, and creative videos that speak
+                directly to your dream. Our constant study will definitely
+                fine-tune your business strategy, accelerating your brand
+                success in the US market.
               </p>
             </div>
           </div>
@@ -287,16 +289,18 @@ const Page = async () => {
               <h2
                 className={`${didact_gothic.className} text-[25px] sm:text-3xl font-semibold leading-8 sm:leading-10`}
               >
-                We Are Recognised As Leaders In The LinkedIn Lead Generation
-                Space
+                Your success our explanation-
               </h2>
               <p className="default-text-style py-[15px]">
-                LinkedIn Lead Generation has played a HUGE part in building up
-                The Data Peak Group (PLG)! We were featured in this SEMrush
-                article in which Deepak Shukla explains how he generated $18,000
-                worth of proposals using LinkedIn within 3 months. We’ve also
-                shared our thoughts on LinkedIn articles on the LinkedInformed
-                podcast hosted by Mark Williams.
+                Our unique strategies will deliver the best results you dream of
+                fast and fairly. We provide unparalleled service at a very
+                competitive price. We create both simple and highly complex
+                leads perfectly, covering the latest possible data.
+              </p>
+              <p className="default-text-style py-[15px]">
+                Our consultants are masterminds in technology sales outsourcing,
+                imposing tailored solutions to power your business. Hence, it's
+                high time you contacted DATA PEAK to grow your dream leads!
               </p>
             </div>
           </div>

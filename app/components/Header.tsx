@@ -1,10 +1,10 @@
 "use client";
-import Link from "next/link";
+import logo from "@/public/logo.png";
 import Image from "next/image";
-import { useState, useEffect } from "react";
+import Link from "next/link";
+import { useEffect, useState } from "react";
 import { CgClose, CgMenuRight } from "react-icons/cg";
 import { FaAngleDown } from "react-icons/fa";
-import logo from "@/public/logo.png";
 
 export default function Header() {
   const [navCollapse, setNavCollapse] = useState(true);
@@ -24,11 +24,6 @@ export default function Header() {
         },
         { id: 2, title: "B2B Lead Generation", link: "/b2b-lead-generation" },
         { id: 3, title: "Email Marketing", link: "/email-marketing" },
-        {
-          id: 4,
-          title: "Facebook Page Product Review",
-          link: "/facebook-product-review",
-        },
       ],
     },
     {
